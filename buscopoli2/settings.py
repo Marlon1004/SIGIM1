@@ -314,14 +314,16 @@ CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
 
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'buscopoli',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': '3axc8$4j$e_r3l5_vp3prg1e_nl2vckh',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '48927',
 
         #'OPTIONS': {
         #    'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
