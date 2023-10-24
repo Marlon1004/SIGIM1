@@ -1,0 +1,217 @@
+body {
+  font-family: 'Lora';
+  background: url("../img/Buscopoli-04.eb68c76ea51c.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: 100% 100%;
+  margin: 0;
+  margin-bottom: 40px;
+  position: relative;
+  height: 83%;
+}
+
+.img2 {
+  max-width: 100%;
+  max-height: 115%;
+  padding-left: 20%;
+}
+
+.cat{
+  height: 35%;
+  width: 35%;
+}
+
+.cat2{
+  height: 25%;
+  width: 35%;
+}
+
+.form{
+  display: flex;
+  width: 100px;
+}
+
+div .boton:hover{
+  background-color:#f2b828;
+  box-shadow: 2px 2px 0px #373c3c;
+}
+
+.buscar{
+  text-decoration:none;
+  font-weight: 0;
+  font-size: 100%;
+  color:#333333;
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-left:2%;
+  padding-right:18%;
+  background-color:#c9c9c91c;
+  border-color: #ffffff;
+  border-width: 3%;
+  border-style: initial;
+  border-radius:10px;
+  box-shadow: 2px 2px 2px #373c3c;
+  width: 90%;
+}
+.busquedas{
+  width: 167%;
+}
+
+.boton{
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color:#0f3b5e;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:10px;
+  padding-right:40px;
+  background-color:#c9c9c936;
+  border-color: #c4c4c4;
+  border-width: 3px;
+  border-style: initial;
+  border-radius:10px;
+  box-shadow: 2px 2px 0px #373c3c;
+}
+
+.boton2{
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color:#0f3b5e;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:10px;
+  padding-right:40px;
+  background-color:#c9c9c936;
+  border-color: #c4c4c4;
+  border-width: 3px;
+  border-style: initial;
+  border-radius:10px;
+  box-shadow: 2px 2px 0px #373c3c;
+}
+
+.boton.orange{
+  background-color:#f2b828;
+  box-shadow: 2px 2px 0px #373c3c;
+  color: #fff;
+}
+
+.boton.busqueda{
+  text-decoration: none;
+  display: flexbox;
+  text-align: left;
+  font-weight: 00;
+  font-size: 20px;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:30px;
+  padding-right:0px;
+  background-color:#c9c9c936;
+  border-color: #ffffff;
+  border-width: 300px;
+  border-style: initial;
+  border-radius:10px;
+  box-shadow: 2px 2px 0px #373c3c;
+}
+
+.boton.large{
+  font-size: 100%;
+  width: 150%;
+}
+
+.boton.transparente{
+  background-color:transparent;
+  box-shadow: 0px 0px 0px #373c3c;
+}
+
+.boton2.transparente{
+  background-color:transparent;
+  box-shadow: 0px 0px 0px #373c3c;
+}
+
+footer{
+  height: 17%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0% 16% 0% 26%;
+  position: absolute;
+  width: 98%;
+  bottom: 5px;
+  border-radius: 64%;
+}
+
+.imgfooter{
+  width: 50%;
+}
+
+.imgfooter7{
+  width: 50%;
+  height: 60%;
+}
+
+.imgfooter2{
+  width: 40px;
+  margin-right: 3px;
+}
+
+.imgfooter3{
+  width: 5%;
+}
+
+footer .text-center{
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 150%;
+}
+
+footer .enlaces{
+  background-color: #f2f4f3;
+}
+
+footer .enlaces:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+header {
+  background: transparent;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  text-align: right;
+}
+
+footer .mariana{
+  background-color: transparent;
+  width: 41%;
+  padding-left: 25%;
+}
+
+.container{
+  padding-right: 0%;
+  max-width: 85%;
+
+}
+
+.container1{
+  max-width: 100%;
+  margin-top: 0%;
+}
+
+.container2{
+  max-width: 100%;
+  margin-top: 11%;
+}
+
+.blanco{
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  margin: 10%;
+}

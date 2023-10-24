@@ -1,0 +1,64 @@
+{% load cms_tags menu_tags sekizai_tags %}
+
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es" {% load static %}><head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​ANEXO Formato proyecto de Desarrollo Tecnológico, ​TENER EN CUENTA:&nbsp;Este es un instructivo y a la vez un formato para la presentación de proyectos. Debe ser diligenciado completamente. Para facilitar la lectura del proyecto, las nota​s al pie deben ser&nbsp; borradas a la hora de incluir la información del proyecto.&nbsp;Para el diligenciamiento utilizar Times New Roman 12 e interlineado de 1,5, color negro o&nbsp; automático, justificado.​, ​Profesores investigadores​, Estudiantes en formación, ​Productos esperados​">
+    <meta name="description" content="">
+    <title>Creación Proyecto Innovación</title>
+
+    {% load static%}
+
+    <link rel="stylesheet" href="{% static 'css/nicepage_innovacion.css'%}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Página-1.css'% }" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery_innovacion.js'%} " defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage_innovacion.js'%}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+    
+    <link rel="shortcut icon" href="{% static 'img/logo.jpg'%}">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "{% static 'img/logotipoconacreditacin-02.png' %} "
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página 1">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+    {% render_block "css" %}
+
+
+</head>
+
+
+
+  <body data-home-page="Página-1.html" data-home-page-title="Página 1" class="u-body u-xl-mode" data-lang="es">
+
+    {% cms_toolbar %}
+
+
+    <h1>¡Información Guardada con Éxito!</h1>
+    <p>Su información se ha guardado correctamente.</p>
+    <a href="{% page_url 'home' %}">Volver al Inicio</a>
+
+
+
+
+
+  {% render_block "js" %}
+
+            {% block content %}
+              {% placeholder "content" %}
+            {% endblock content %}
+  
+</body></html>

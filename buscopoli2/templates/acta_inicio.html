@@ -1,0 +1,877 @@
+{% load cms_tags menu_tags sekizai_tags %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es " {% load static %}>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Acta de Inicio</title>
+
+    {% load static%}
+
+    <link rel="stylesheet" href="{% static 'css/nicepage.css'%}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Casa.css'% }" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js'%}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js'%}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "{% static 'img/logotipoconacreditacin-02.png' %} "
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Casa">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+    {% render_block "css" %}
+
+</head>
+
+  <body data-home-page="Casa.html" data-home-page-title="Casa" class="u-body u-xl-mode" data-lang="es">
+
+    {% cms_toolbar %}
+
+  <header class="u-clearfix u-header u-header" id="sec-fe7b"><div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
+        <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'img/usudelogo-UNIVERSIDADMARIANA.png' %} " alt="" data-image-width="447" data-image-height="462">
+        <img class="u-image u-image-contain u-image-round u-radius-10 u-image-2" src="{% static 'img/Buscopolilogo.png' %} " alt="" data-image-width="962" data-image-height="688">
+        <p class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-1"><b>Acta de
+Inicio de Proyecto</b><b></b>
+          <br><b>Sistema de Investigaciones
+SIUMAR</b>
+        </p>
+        <h4 class="u-custom-font u-font-merriweather u-text u-text-default u-text-2">PROCESO:Gestión de la Investigación</h4>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-4e2c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-form u-form-1">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-22 u-form-vertical u-inner-form" style="padding: 30px;" source="email" name="form">
+            <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-top">
+              <label for="name-6797" class="u-custom-font u-font-merriweather u-label u-label-1">Numero de Acta</label>
+              <input type="text" id="name-6797" name="txt_numeroacta" class="u-input u-input-rectangle u-radius-12" required="">
+            </div>
+            <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top">
+              <label for="date-6832" class="u-custom-font u-font-merriweather u-label u-label-2">Fecha</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-6832" name="date_fecha" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-1"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-1">Información general del proyecto<span style="font-weight: 700;"></span> de investigación<span style="font-weight: 700;">
+                <span style="font-weight: 400;">
+                  <span style="font-weight: 700;"></span>
+                </span>
+              </span>
+            </p>
+            <div class="u-form-group u-label-top">
+              <label for="text-b00c" class="u-custom-font u-font-merriweather u-label u-label-3">Titúlo proyecto</label>
+              <input type="text" placeholder="" id="text-b00c" name="txt_tituloproyecto" class="u-input u-input-rectangle u-radius-12 u-input-3">
+            </div>
+            <div class="u-form-group u-label-top">
+              <label for="text-0681" class="u-custom-font u-font-merriweather u-label u-label-4">Codigo Proyecto</label>
+              <input type="text" placeholder="" id="text-0681" name="txt_codigoproyecto" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-7">
+              <label for="text-84f2" class="u-custom-font u-font-merriweather u-label u-label-5">Nombre de Convocatoria</label>
+              <input type="text" placeholder="" id="text-84f2" name="txt_nombreconvocatoria" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-8">
+              <label for="date-15c6" class="u-custom-font u-font-merriweather u-label u-label-6">Fecha de Publicación Convocatoria</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-15c6" name="date_fechaconvocatoria" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-9">
+              <label for="text-6564" class="u-custom-font u-font-merriweather u-label u-label-7">Grupo de Investigación</label>
+              <input type="text" placeholder="" id="text-6564" name="txt_grupoinvestigacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top">
+              <label for="text-f897" class="u-custom-font u-font-merriweather u-label u-label-8">Codigo del Grupo</label>
+              <input type="text" placeholder="" id="text-f897" name="txt_codigogrupo" class="u-input u-input-rectangle u-radius-12 u-input-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-select u-label-top">
+              <label for="select-c78a" class="u-custom-font u-font-merriweather u-label u-label-9">Facultad</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-c78a" name="select_facultad" class="u-border-1 u-input u-input-rectangle u-radius-12">
+                  <option value="Ciencias de la Salud" data-calc="">Ciencias de la Salud</option>
+                  <option value="Educación" data-calc="">Educación</option>
+                  <option value="Facultad de Ingenieria" data-calc="">Facultad de Ingenieria</option>
+                  <option value="Humanidades y Ciencias Sociales" data-calc="">Humanidades y Ciencias Sociales</option>
+                  <option value="Ciencias Contables, Económia" data-calc="">Ciencias Contables, Económia</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-select u-label-top">
+              <label for="select-94c2" class="u-custom-font u-font-merriweather u-label u-label-10">Programa</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-94c2" name="select_programa" class="u-border-1 u-input u-input-rectangle u-radius-12">
+                  <option value="Derecho" data-calc="">Derecho</option>
+                  <option value="Trabajo Social" data-calc="">Trabajo Social</option>
+                  <option value="Comunicación Social" data-calc="">Comunicación Social</option>
+                  <option value="Psicología" data-calc="">Psicología</option>
+                  <option value="Mercadeo" data-calc="">Mercadeo</option>
+                  <option value="Contaduría Pública" data-calc="">Contaduría Pública</option>
+                  <option value="Administración de Negocios Internacionales" data-calc="">Administración de Negocios Internacionales</option>
+                  <option value="Licenciatura en Literatura" data-calc="">Licenciatura en Literatura</option>
+                  <option value="Licenciatura en Matemáticas" data-calc="">Licenciatura en Matemáticas</option>
+                  <option value="Licenciatura en Matemáticas" data-calc="">Licenciatura en Matemáticas</option>
+                  <option value="Licenciatura en Educación Infantil" data-calc="">Licenciatura en Educación Infantil</option>
+                  <option value="Licenciatura en Educación Básica Primaria" data-calc="">Licenciatura en Educación Básica Primaria</option>
+                  <option value="Enfermería" data-calc="">Enfermería</option>
+                  <option value="Terapia Ocupacional" data-calc="">Terapia Ocupacional</option>
+                  <option value="Fisioterapia" data-calc="">Fisioterapia</option>
+                  <option value="Nutrición y Dietética" data-calc="">Nutrición y Dietética</option>
+                  <option value="Ingeniería Mecatrónica" data-calc="">Ingeniería Mecatrónica</option>
+                  <option value="Ingeniería Civil" data-calc="">Ingeniería Civil</option>
+                  <option value="Ingeniería de Sistemas" data-calc="">Ingeniería de Sistemas</option>
+                  <option value="Ingeniería Ambiental" data-calc="">Ingeniería Ambiental</option>
+                  <option value="Ingeniería de Procesos" data-calc="">Ingeniería de Procesos</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-13">
+              <label for="text-118d" class="u-custom-font u-font-merriweather u-label u-label-11">Acuerdo  Consejo Académico </label>
+              <input type="text" placeholder="" id="text-118d" name="txt_acuerdoconsejoacademico" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top">
+              <label for="date-09aa" class="u-custom-font u-font-merriweather u-label u-label-12">Fecha de Aprobación</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-09aa" name="date_fechaAprobacion" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-15">
+              <label for="text-9a24" class="u-custom-font u-font-merriweather u-label u-label-13">Acuerdo Consejo de Facultad</label>
+              <input type="text" placeholder="" id="text-9a24" name="txt_acuerdoconsejofacultad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top">
+              <label for="date-5bbe" class="u-custom-font u-font-merriweather u-label u-label-14">Fecha de Finalización</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-5bbe" name="date_fechafinalizacion" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-17">
+              <label for="text-d102" class="u-custom-font u-font-merriweather u-label u-label-15">Modalidad de Aprobación</label>
+              <input type="text" placeholder="" id="text-d102" name="txt_modalidadAprobacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-2"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-2"> Tipo de Proyecto</p>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top">
+              <input type="checkbox" id="checkbox-3da0" name="checkbox_investigacioncientifica" value="On" class="u-form-group-22 u-field-input">
+              <label for="checkbox-3da0" class="u-form-group-22 u-field-label">Investigación Cientifica</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top">
+              <input type="checkbox" id="checkbox-27f4" name="checkbox_desarrollo" value="On" class="u-field-input">
+              <label for="checkbox-27f4" class="u-field-label">Desarrollo</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top u-form-group-22">
+              <input type="checkbox" id="checkbox-4461" name="checkbox_innovacion" value="On" class="u-field-input">
+              <label for="checkbox-4461" class="u-field-label">Innovacíon</label>
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-3">________________________</p>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top u-form-group-24">
+              <input type="checkbox" id="checkbox-5222" name="checkbox_investigacionaplicada" value="On" class="u-field-input">
+              <label for="checkbox-5222" class="u-field-label">Investigación Aplicada</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top u-form-group-25">
+              <input type="checkbox" id="checkbox-354b" name="checkbox_desarrollotecnologico" value="On" class="u-field-input">
+              <label for="checkbox-354b" class="u-field-label">Desarrollo Tecnologico</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top u-form-group-26">
+              <input type="checkbox" id="checkbox-30f3" name="checkbox_enProducto" value="On" class="u-field-input">
+              <label for="checkbox-30f3" class="u-field-label">En Producto</label>
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-4">_________________________</p>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top u-form-group-28">
+              <input type="checkbox" id="checkbox-ba83" name="checkbox_desarrolloexperimental" value="On" class="u-field-input">
+              <label for="checkbox-ba83" class="u-field-label">Desarrollo Exprimental</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top u-form-group-29">
+              <input type="checkbox" id="checkbox-a9ad" name="checkbox_desarrolloexperimental_experimental" value="On" class="u-field-input">
+              <label for="checkbox-a9ad" class="u-field-label">Desarrollo Experimental</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-label-top u-form-group-30">
+              <input type="checkbox" id="checkbox-320c" name="checkbox_enProceso" value="On" class="u-form-group-30 u-field-input">
+              <label for="checkbox-320c" class="u-form-group-30 u-field-label">En Proceso</label>
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-3"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-5">Objetivos del Proyecto</p>
+            <div class="u-form-group u-form-textarea u-label-top u-form-group-33">
+              <label for="textarea-a38a" class="u-custom-font u-font-merriweather u-label u-label-16">Objetivo General</label>
+              <textarea rows="4" cols="50" id="textarea-a38a" name="txt_objetivogeneral" class="u-input u-input-rectangle u-radius-12" required=""></textarea>
+            </div>
+            <div class="u-form-group u-form-textarea u-label-top u-form-group-34">
+              <label for="textarea-0eed" class="u-custom-font u-font-merriweather u-label u-label-17">Objetivos Especificos</label>
+              <textarea rows="4" cols="50" id="textarea-0eed" name="txt_objetivosespecificos" class="u-input u-input-rectangle u-radius-12" required=""></textarea>
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-4"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-6">Duración del Proyecto</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-select u-label-top u-form-group-37">
+              <label for="select-269e" class="u-custom-font u-font-merriweather u-label u-label-18">Tiempo (Meses)</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-269e" name="select_tiempomeses" class="u-input u-input-rectangle u-radius-12">
+                  <option value="1" data-calc="1">1</option>
+                  <option value="2" data-calc="2">2</option>
+                  <option value="3" data-calc="3">3</option>
+                  <option data-calc="4" value="4">4</option>
+                  <option data-calc="5" value="5">5</option>
+                  <option data-calc="6" value="6">6</option>
+                  <option data-calc="7" value="7">7</option>
+                  <option data-calc="8" value="8">8</option>
+                  <option data-calc="9" value="9">9</option>
+                  <option data-calc="10" value="10">10</option>
+                  <option data-calc="11" value="11">11</option>
+                  <option data-calc="12" value="12">12</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-date u-form-group u-form-partition-factor-3 u-label-top u-form-group-38">
+              <label for="date-f800" class="u-custom-font u-font-merriweather u-label u-label-19">Fecha Inicio</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-f800" name="date_fechaInicio" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-form-date u-form-group u-form-partition-factor-3 u-label-top u-form-group-39">
+              <label for="date-126f" class="u-custom-font u-font-merriweather u-label u-label-20">Fecha Finalización</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-126f" name="date_fechaFinalizacion-1" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-5"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-7">Compromisos de Obligación Cumplimiento del Proyecto</p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-8">Compromisos del Proyecto</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-9">Tipo: Nuevo Conocimiento</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-44">
+              <label for="text-9820" class="u-custom-font u-font-merriweather u-label u-label-21">Producto</label>
+              <input type="text" placeholder="" id="text-9820" name="txt_producto_Nuevoconocimiento" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-45">
+              <label for="text-78bf" class="u-custom-font u-font-merriweather u-label u-label-22">Cantidad</label>
+              <input type="text" placeholder="" id="text-78bf" name="txt_cantidad_Nuevoconocimiento" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-46">
+              <label for="text-dd0b" class="u-custom-font u-font-merriweather u-label u-label-23">Indicador del Resultado</label>
+              <input type="text" placeholder="" id="text-dd0b" name="txt_indicador_Nuevoconocimiento" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-47">
+              <label for="text-f20a" class="u-custom-font u-font-merriweather u-label u-label-24">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-f20a" name="txt_medioverificacion_Nuevo" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-label-top u-form-group-48">
+              <label for="date-50a5" class="u-custom-font u-font-merriweather u-label u-label-25">Fecha limite de entrega</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-50a5" name="date_fechalimite_Nuevoconocimiento" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-10">_________________________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-11">Tipo:Apropiación Social y divulgación del conocimiento</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-51">
+              <label for="text-25e3" class="u-custom-font u-font-merriweather u-label u-label-26">Producto</label>
+              <input type="text" placeholder="" id="text-25e3" name="txt_producto_Apropiacionsocial" class="u-input u-input-rectangle u-radius-12 u-input-26">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-52">
+              <label for="text-3f11" class="u-custom-font u-font-merriweather u-label u-label-27">Cantidad</label>
+              <input type="text" placeholder="" id="text-3f11" name="txt_cantidad_Apropiacionsocial" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-53">
+              <label for="text-b135" class="u-custom-font u-font-merriweather u-label u-label-28">Indicador del Resultado</label>
+              <input type="text" placeholder="" id="text-b135" name="txt_indicador_Apropiacionsocial" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-54">
+              <label for="text-b0a4" class="u-custom-font u-font-merriweather u-label u-label-29">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-b0a4" name="txt_medioverificacion_Apropiacionsocial" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-label-top u-form-group-55">
+              <label for="date-3183" class="u-custom-font u-font-merriweather u-label u-label-30">Fecha limite de entrega</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-3183" name="date_fechalimite_Apropiacionsocial" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-12">___________________________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-13">Tipo:Desarrollo tecnológico e innovación</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-58">
+              <label for="text-6572" class="u-custom-font u-font-merriweather u-label u-label-31">Producto</label>
+              <input type="text" placeholder="" id="text-6572" name="txt_producto_Desarrollotecnologico" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-59">
+              <label for="text-ca00" class="u-custom-font u-font-merriweather u-label u-label-32">Cantidad</label>
+              <input type="text" placeholder="" id="text-ca00" name="txt_cantidad_Desarrollotecnologico" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-60">
+              <label for="text-a762" class="u-custom-font u-font-merriweather u-label u-label-33">Indicador del Resultado</label>
+              <input type="text" placeholder="" id="text-a762" name="txt_indicador_Desarrollotecnologico" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-61">
+              <label for="text-99f3" class="u-custom-font u-font-merriweather u-label u-label-34">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-99f3" name="txt_medioverificacion_Desarrollotecnologico" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-label-top u-form-group-62">
+              <label for="date-0c76" class="u-custom-font u-font-merriweather u-label u-label-35">Fecha limite de entrega</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-0c76" name="date_fechalimite_Desarrollotecnologico" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-14">_________________________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-15"> Tipo:Formación de recurso humano</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-65">
+              <label for="text-a305" class="u-custom-font u-font-merriweather u-label u-label-36">Producto</label>
+              <input type="text" placeholder="" id="text-a305" name="txt_producto_Formacionrecurso" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-66">
+              <label for="text-f0a3" class="u-custom-font u-font-merriweather u-label u-label-37">Cantidad</label>
+              <input type="text" placeholder="" id="text-f0a3" name="txt_cantidad_Formacionrecurso" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-67">
+              <label for="text-cfcc" class="u-custom-font u-font-merriweather u-label u-label-38">Indicador del Resultado</label>
+              <input type="text" placeholder="" id="text-cfcc" name="txt_indicador_Formacionrecurso" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-68">
+              <label for="text-6f75" class="u-custom-font u-font-merriweather u-label u-label-39">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-6f75" name="txt_medioverificacion_Formacionrecurso" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-label-top u-form-group-69">
+              <label for="date-ed09" class="u-custom-font u-font-merriweather u-label u-label-40">Fecha limite de entrega</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-ed09" name="date_fechalimite_Formacionrecurso" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-16">_________________________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-17">Tipo:Otro</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-72">
+              <label for="text-08de" class="u-custom-font u-font-merriweather u-label u-label-41">Producto</label>
+              <input type="text" placeholder="" id="text-08de" name="txt_producto_Otro" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-73">
+              <label for="text-9098" class="u-custom-font u-font-merriweather u-label u-label-42">Cantidad</label>
+              <input type="text" placeholder="" id="text-9098" name="txt_cantidad_Otro" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-74">
+              <label for="text-a60d" class="u-custom-font u-font-merriweather u-label u-label-43">Indicador del Resultado</label>
+              <input type="text" placeholder="" id="text-a60d" name="txt_indicador_Otro" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-75">
+              <label for="text-b255" class="u-custom-font u-font-merriweather u-label u-label-44">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-b255" name="txt_medioverificacion_Otro" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-label-top u-form-group-76">
+              <label for="date-2200" class="u-custom-font u-font-merriweather u-label u-label-45">Fecha limite de entrega</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-2200" name="date_fechalimite_Otro" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-6"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-18">Entidades Participantes</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-79">
+              <label for="text-9086" class="u-custom-font u-font-merriweather u-label u-label-46">Nombre Entidad</label>
+              <input type="text" placeholder="" id="text-9086" name="txt_nombreEntidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-80">
+              <label for="date-544c" class="u-custom-font u-font-merriweather u-label u-label-47">Fecha de Manifestación</label>
+              <input type="text" readonly="readonly" placeholder="MM/DD/AAAA" id="date-544c" name="date_fechamanifestacion_Entidad" class="u-input u-input-rectangle u-radius-12" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-81">
+              <label for="text-519d" class="u-custom-font u-font-merriweather u-label u-label-48">Apoyo financiero</label>
+              <input type="text" placeholder="" id="text-519d" name="txt_apoyofinanciero_Entidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-82">
+              <label for="text-6406" class="u-custom-font u-font-merriweather u-label u-label-49">Valor en Especie</label>
+              <input type="text" placeholder="" id="text-6406" name="txt_valorespecie_Entidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-checkbox-group u-form-group u-label-top u-form-group-83">
+              <label class="u-custom-font u-font-merriweather u-label u-label-50">Acuerdo o Acta de Propiedad Intelectual</label>
+              <div class="u-form-checkbox-group-wrapper">
+                <div class="u-input-row">
+                  <input id="field-01fc" type="checkbox" name="checkbox_acuerdopropiedad_Entidad[]" value="SI" class="u-field-input" checked="checked" data-calc="">
+                  <label class="u-field-label" for="field-01fc">SI</label>
+                </div>
+                <div class="u-input-row">
+                  <input id="field-2fc0" type="checkbox" name="checkbox_acuerdopropiedad_Entidad[]" value="NO" class="u-field-input" data-calc="">
+                  <label class="u-field-label" for="field-2fc0">NO</label>
+                </div>
+              </div>
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-7"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-19">Fuentes de Financiación</p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-20">Universidad Mariana</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-21">Dirección de Investigación</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-88">
+              <label for="text-9fab" class="u-custom-font u-font-merriweather u-label u-label-51">Rec.Frescos</label>
+              <input type="text" placeholder="" id="text-9fab" name="txt_recfrescos_Direccioninvestigacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-89">
+              <label for="text-a06a" class="u-custom-font u-font-merriweather u-label u-label-52">Rec.Especie</label>
+              <input type="text" placeholder="" id="text-a06a" name="txt_recespecie_Direccioninvestigacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-90">
+              <label for="text-d123" class="u-custom-font u-font-merriweather u-label u-label-53">Centro de Costos</label>
+              <input type="text" placeholder="" id="text-d123" name="txt_centrocostos_Direccioninvestigacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-91">
+              <label for="text-affd" class="u-custom-font u-font-merriweather u-label u-label-54">Ejecución por año recursos frescos</label>
+              <input type="text" placeholder="" id="text-affd" name="txt_ejecucionaño_Direccioninvestigacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-22">________________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-23">Programas</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-94">
+              <label for="text-79a4" class="u-custom-font u-font-merriweather u-label u-label-55">Rec.Fresco</label>
+              <input type="text" placeholder="" id="text-79a4" name="txt_recfresco_Programa" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-95">
+              <label for="text-08fa" class="u-custom-font u-font-merriweather u-label u-label-56">Rec.Especie</label>
+              <input type="text" placeholder="" id="text-08fa" name="txt_recespecie_Programa" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-96">
+              <label for="text-5f74" class="u-custom-font u-font-merriweather u-label u-label-57">Centro de Costos</label>
+              <input type="text" placeholder="" id="text-5f74" name="txt_centrocostos_Programa" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-97">
+              <label for="text-e0fc" class="u-custom-font u-font-merriweather u-label u-label-58">Ejecución por año recursos frescos</label>
+              <input type="text" placeholder="" id="text-e0fc" name="txt_ejecucionaño_Programa" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-24">Entidad</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-99">
+              <label for="text-7927" class="u-custom-font u-font-merriweather u-label u-label-59">Porcentaje respecto del total del proyecto</label>
+              <input type="text" placeholder="" id="text-7927" name="txt_procentajetotal_Entidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-100">
+              <label for="text-4ebd" class="u-custom-font u-font-merriweather u-label u-label-60">Rec. Frescos</label>
+              <input type="text" placeholder="" id="text-4ebd" name="txt_recfrescos_Entidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-101">
+              <label for="text-89ca" class="u-custom-font u-font-merriweather u-label u-label-61">Apoyo en Especie</label>
+              <input type="text" placeholder="" id="text-89ca" name="txt_apoyoespecie_Entidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-102">
+              <label for="text-5896" class="u-custom-font u-font-merriweather u-label u-label-62">Ejecución por año</label>
+              <input type="text" placeholder="" id="text-5896" name="txt_ejecucionaño_Entidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-25">________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-26">Total Universidad Mariana </p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-105">
+              <label for="text-9b35" class="u-custom-font u-font-merriweather u-label u-label-63">Valor Letras</label>
+              <input type="text" placeholder="" id="text-9b35" name="txt_valorletras_Totaluniversidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-106">
+              <label for="text-f347" class="u-custom-font u-font-merriweather u-label u-label-64">Valor ($)</label>
+              <input type="text" placeholder="" id="text-f347" name="txt_valor_Totaluniversidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-27">Total Entidad</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-108">
+              <label for="text-c736" class="u-custom-font u-font-merriweather u-label u-label-65">Valor Letras</label>
+              <input type="text" placeholder="" id="text-c736" name="txt_valorletras_Totalentidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-109">
+              <label for="text-74bd" class="u-custom-font u-font-merriweather u-label u-label-66">Valor ($)</label>
+              <input type="text" placeholder="" id="text-74bd" name="txt_valor_Totalentidad" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-28"> Total Proyecto</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-111">
+              <label for="text-18ce" class="u-custom-font u-font-merriweather u-label u-label-67">Valor Letras</label>
+              <input type="text" placeholder="" id="text-18ce" name="txt_valorletras_Totalproyecto" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-112">
+              <label for="text-766f" class="u-custom-font u-font-merriweather u-label u-label-68">Valor ($)</label>
+              <input type="text" placeholder="" id="text-766f" name="txt_valor_Totalproyecto" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-8"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-29">Propiedad intelectual del Proyecto (PI)</p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-30">Entidades Participantes en el Proyecto</p>
+            <p class="u-align-justify u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-31"><b>
+                <span style="font-weight: 400;">T<span style="font-weight: 700;">
+                    <span style="font-weight: 700;">itularidad de los Derechos Morales</span>.
+                  </span>
+                </span></b>
+              <span style="font-weight: 400;">La titularidad de los derechos morales que se
+  deriven de los resultados obtenidos dentro del desarrollo del PROYECTO
+  corresponderá a cada uno de los autores o inventores intervinientes y
+  vinculados a LAS PARTES de acuerdo con lo establecido por la ley. </span><b>
+                <span style="font-weight: 400;">Titularidad de los Derechos Patrimoni</span>
+                <span style="font-weight: 400;">ales de Autor.</span></b>
+              <span style="font-weight: 400;">La titularidad de los derechos patrimoniales sobre
+  los artículos científicos, <i>papers</i>,
+  ponencias, conocimientos, productos, resultados y tecnologías que se obtengan
+  o se pudieran obtener en desarrollo del PROYECTO, pertenecerán a LAS PARTES
+  según acuerdo de propiedad intelectual entre las mismas, cuya titularidad se
+  definirá en virtud de los aportes intelectuales, aportes en dinero y/o en
+  especie.
+              </span>
+              <br><b>
+                <span style="font-weight: 400;">Titularidad de los Derechos Patrimoniales de
+  Propiedad Industrial</span></b>. <span style="font-weight: 400;">La
+  titularidad sobre patentes de invención, patentes de modelo de utilidad,
+  diseños industriales, esquemas de trazado de circuitos integrados, marcas,
+  lemas comerciales, nombres comerciales, enseñas comerciales</span>, <span style="font-weight: 400;">denominaciones
+  de origen y demás creaciones susceptibles de ser protegidas por la propiedad
+  industrial que se deriven del desarrollo del proyecto, pertenecerán a LAS
+  PARTES según acuerdo de propiedad intelectual entre las mismas, cuya
+  titularidad se definirá en virtud de los aportes <span style="font-weight: 700;">intelectu</span>
+              </span>
+              <span style="font-weight: 400;">ales, aportes en
+  dinero y/</span>
+              <span style="font-weight: 400;">o en especie</span>.&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>
+            </p>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-117">
+              <label for="text-a889" class="u-custom-font u-font-merriweather u-label u-label-69">Universidad Mariana</label>
+              <input type="text" placeholder="porcentaje PI %" id="text-a889" name="txt_universidadmariana_PorcentajePI" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-118">
+              <label for="text-b097" class="u-custom-font u-font-merriweather u-label u-label-70">Institución</label>
+              <input type="text" placeholder="porcentaje PI %" id="text-b097" name="txt_intitucion_PorcentajePI" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-119">
+              <label for="text-4ebb" class="u-custom-font u-font-merriweather u-label u-label-71">Total</label>
+              <input type="text" placeholder="Porcentaje PI %" id="text-4ebb" name="txt_total_PorcentajePI" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-32">Sin
+perjuicio de los Derechos de Autor reconocidos y protegidos por las leyes 23 de
+1982, 44 de 1994 y 1150 de 2011, que por su naturaleza están y estarán en
+cabeza del autor, los derechos patrimoniales (que a titulo enunciativo son: el
+de reproducción en todas sus modalidades, transformación o adaptación, edición,
+comunicación pública, traducción, distribución y en general cualquier tipo de
+explotación o usufructo que de la obra se pueda realizar por cualquier medio
+conocido o por conocer) sobre los resultados que arroje el desarrollo del
+proyecto realizados por el investigador, pertenecen a la Universidad Mariana a
+perpetuidad y sin límite de territorio, quedando expresamente convenido que el
+investigador (a) no recibirá ningún tipo de compensación, bonificación o pago
+de ninguna naturaleza diferente a su salario convenido en el contrato de
+trabajo suscrito con la Universidad Mariana, ante lo cual acepta que no existe
+ninguna expectativa sobre los eventuales efectos económicos que puedan
+derivarse de la divulgación de resultados o de las obras creadas en virtud del
+proyecto.<br>&nbsp;Por
+lo anterior, el investigador (a) libera de toda responsabilidad a la
+Universidad Mariana, por las acciones que llegaran a entablar terceros en razón
+de transgresiones a derechos de autor, como consecuencia de las obras o
+productos que se originen de la ejecución del proyecto, en consecuencia, se
+compromete a mantener indemne a la Universidad ante cualquier reclamo o acción
+que pudiera sufrir, asumiendo toda la responsabilidad por los daños o
+perjuicio <span style="font-weight: 400;"></span>s ocasionados. 
+&nbsp;
+Con la desvinculación del
+investigador de la Universidad se generará su retiro del proyecto y como
+consecuencia de ello, se hará efectiva la cesión de derechos patrimoniales de
+autor a perpetuidad obrante como anexo al proyecto. <span style="font-weight: 400;"></span>&nbsp;
+            </p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-33">Participantes en el Proyecto</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-34">Rol:
+ 
+  
+  Investigador principal</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-123">
+              <label for="text-f780" class="u-custom-font u-font-merriweather u-label u-label-72">Identificación</label>
+              <input type="text" placeholder="" id="text-f780" name="txt_identificacion_Investigadorprincipal" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-124">
+              <label for="text-14c8" class="u-custom-font u-font-merriweather u-label u-label-73">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-14c8" name="txt_nombrecompleto_Investigadorprinciapl" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-125">
+              <label for="text-b543" class="u-custom-font u-font-merriweather u-label u-label-74">Institución a la que se encuentra vinculado</label>
+              <input type="text" placeholder="" id="text-b543" name="txt_institucionvinculado_Investigadorprincipal" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-126">
+              <label for="text-6085" class="u-custom-font u-font-merriweather u-label u-label-75">Grupo de Investigación</label>
+              <input type="text" placeholder="" id="text-6085" name="txt_grupoinvestigacion_Investigadorprincipal" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-35">_________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-36">Rol:
+ 
+  
+  Co-investigador interno</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-129">
+              <label for="text-1105" class="u-custom-font u-font-merriweather u-label u-label-76">Identificación</label>
+              <input type="text" placeholder="" id="text-1105" name="txt_identificacion_Coinvestigador" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-130">
+              <label for="text-741c" class="u-custom-font u-font-merriweather u-label u-label-77">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-741c" name="txt_nombrecompleto_Coinvestigador" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-131">
+              <label for="text-bdfe" class="u-custom-font u-font-merriweather u-label u-label-78">Institución a la que se encuentra vinculado</label>
+              <input type="text" placeholder="" id="text-bdfe" name="txt_institucionvinculado_Coinvestigador" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-132">
+              <label for="text-0708" class="u-custom-font u-font-merriweather u-label u-label-79">Grupo de Investigación</label>
+              <input type="text" placeholder="" id="text-0708" name="txt_grupoinvestigacion_Coinvestigador" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-37">__________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-38">Rol:
+Estudiante en
+formación 
+Pregrado&nbsp; Universidad Mariana&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-135">
+              <label for="text-f4f9" class="u-custom-font u-font-merriweather u-label u-label-80">Identificación</label>
+              <input type="text" placeholder="" id="text-f4f9" name="txt_identificacion_Estudiantepregrado1" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-136">
+              <label for="text-b9ae" class="u-custom-font u-font-merriweather u-label u-label-81">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-b9ae" name="txt_nombrecompleto_Estudiantepregrado1" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-137">
+              <label for="text-d8b5" class="u-custom-font u-font-merriweather u-label u-label-82">Institución a la que se encuentra vinculado</label>
+              <input type="text" placeholder="" id="text-d8b5" name="txt_institucionvinculado_Estudiantepregrado1" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-138">
+              <label for="text-f73e" class="u-custom-font u-font-merriweather u-label u-label-83">Grupo de Investigación</label>
+              <input type="text" placeholder="" id="text-f73e" name="txt_grupoinvestigacion_Estudiantepregrado1" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-39">__________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-40">Rol:Estudiante en
+formación 
+Pregrado&nbsp; Universidad Mariana</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-141">
+              <label for="text-3ff0" class="u-custom-font u-font-merriweather u-label u-label-84">Identificación</label>
+              <input type="text" placeholder="" id="text-3ff0" name="txt_identificacion_Estudiantepregrado2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-142">
+              <label for="text-e556" class="u-custom-font u-font-merriweather u-label u-label-85">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-e556" name="txt_nombrecompleto_Estudiantepregrado" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-143">
+              <label for="text-401d" class="u-custom-font u-font-merriweather u-label u-label-86">Institución a la que se encuentra vinculado</label>
+              <input type="text" placeholder="" id="text-401d" name="txt_institucionvinculado_Estudiantepregrado2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-144">
+              <label for="text-db6e" class="u-custom-font u-font-merriweather u-label u-label-87">Grupo de Investigación</label>
+              <input type="text" placeholder="" id="text-db6e" name="txt_grupoinvestigacion_Estudiantepregrado2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-41">Participantes Relacionados con la Universidad Mariana</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-42">Participante 1</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-147">
+              <label for="text-eb9b" class="u-custom-font u-font-merriweather u-label u-label-88">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-eb9b" name="txt_nombrecompleto_Participantes1" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-148">
+              <label for="text-3be0" class="u-custom-font u-font-merriweather u-label u-label-89">Tipo de Vinculación con la Universidad Mariana</label>
+              <input type="text" placeholder="" id="text-3be0" name="txt_tipovinculacion_Participante1" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-149">
+              <label for="text-b92a" class="u-custom-font u-font-merriweather u-label u-label-90">Dedicación aprobada en plan de trabajo semestre(horas/semana)</label>
+              <input type="text" placeholder="" id="text-b92a" name="txt_dedicacionhorassemana_Participante1" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-43">__________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-44">Participante 2</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-152">
+              <label for="text-7bce" class="u-custom-font u-font-merriweather u-label u-label-91">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-7bce" name="txt_nombrecompleto_Participante2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-153">
+              <label for="text-1207" class="u-custom-font u-font-merriweather u-label u-label-92">Tipo de Vinculación con la Universidad Mariana</label>
+              <input type="text" placeholder="" id="text-1207" name="txt_tipovinculacion_Participante2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-154">
+              <label for="text-f1c9" class="u-custom-font u-font-merriweather u-label u-label-93">Dedicación aprobada en plan de trabajo semestre(horas/semana)</label>
+              <input type="text" placeholder="" id="text-f1c9" name="txt_dedicacionhorassemana_Participante2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-45">__________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-46">Participante 3</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-157">
+              <label for="text-a125" class="u-custom-font u-font-merriweather u-label u-label-94">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-a125" name="txt_nombrecompleto_Participante3" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-158">
+              <label for="text-dff6" class="u-custom-font u-font-merriweather u-label u-label-95">Tipo de Vinculación con la Universidad Mariana</label>
+              <input type="text" placeholder="" id="text-dff6" name="txt_tipovinculacion_Participante3" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-159">
+              <label for="text-51b7" class="u-custom-font u-font-merriweather u-label u-label-96">Dedicación aprobada en plan de trabajo semestre(horas/semana)</label>
+              <input type="text" placeholder="" id="text-51b7" name="txt_dedicacionhorassemana_Participante3" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-47">___________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-48">Participante 4</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-162">
+              <label for="text-9861" class="u-custom-font u-font-merriweather u-label u-label-97">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-9861" name="txt_nombrecompleto_Participante4" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-163">
+              <label for="text-ddfc" class="u-custom-font u-font-merriweather u-label u-label-98">Tipo de Vinculación con la Universidad Mariana</label>
+              <input type="text" placeholder="" id="text-ddfc" name="txt_tipovinculacion_Participante4" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-164">
+              <label for="text-3762" class="u-custom-font u-font-merriweather u-label u-label-99">Dedicación aprobada en plan de trabajo semestre(horas/semana)</label>
+              <input type="text" placeholder="" id="text-3762" name="txt_dedicacionhorassemana_Participante4" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-9"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-49">Funciones estudiante en formación&nbsp;</p>
+            <div class="u-form-group u-label-top u-form-group-167">
+              <label for="text-bea0" class="u-custom-font u-font-merriweather u-label u-label-100">Estudiantes de Pregrado</label>
+              <input type="text" placeholder="" id="text-bea0" name="txt_estudiantespregrado_Funciones" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-168">
+              <label for="text-df99" class="u-custom-font u-font-merriweather u-label u-label-101">Estudiantes Posgrado</label>
+              <input type="text" placeholder="" id="text-df99" name="txt_estudiantesprogrado_Funciones" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-10"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-50">Cumplimiento Código de Ética Institucional&nbsp; &nbsp;</p>
+            <div class="u-form-group u-form-textarea u-label-top u-form-group-171">
+              <label for="textarea-7879" class="u-custom-font u-font-merriweather u-form-control-hidden u-label u-label-102"></label>
+              <textarea rows="4" cols="50" id="textarea-7879" name="txt_cumplimientocodigoetica" class="u-input u-input-rectangle u-radius-12" required=""></textarea>
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-11"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-51">Acuerdo de Confidencialidad&nbsp; &nbsp;</p>
+            <div class="u-form-group u-form-textarea u-label-top u-form-group-174">
+              <label for="textarea-0812" class="u-custom-font u-font-merriweather u-form-control-hidden u-label u-label-103"></label>
+              <textarea rows="4" cols="50" id="textarea-0812" name="txt_acuerdoconfidencialidad" class="u-input u-input-rectangle u-radius-12" required=""></textarea>
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-12"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-52">Compromisos de los investigadores&nbsp; &nbsp;</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-53"><!--[if !supportLists]-->a)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Cumplir a cabalidad con los objetivos general y
+específicos del proyecto.&nbsp;<!--[if !supportLists]-->
+              <br>
+              <br>b)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Acatar las observaciones presentadas por los pares
+evaluadores externos en el marco del proceso de aprobación del proyecto, obrantes
+como adjunto al acta de inicio. El acatamiento de las observaciones será
+verificado durante el seguimiento a la ejecución.<br>
+              <br>c)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Desarrollar
+el proyecto conforme al cronograma de actividades propuesto.&nbsp;<!--[if !supportLists]-->
+              <br>
+              <br>d)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Ejecutar
+el proyecto conforme al presupuesto presentado y aprobado.&nbsp;<!--[if !supportLists]-->
+              <br>
+              <br>e)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Ajustar la
+ejecución del proyecto a las disposiciones éticas y bioéticas exigidas para el
+proyecto, a nivel internacional, nacional e institucional, incluyendo la
+resolución 8430 de 1993 del Ministerio de Salud, en caso de aplicar.&nbsp;<!--[if !supportLists]-->
+              <br>
+              <br>f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Presentar
+los informes de avance, final y productos del proyecto, en las fechas
+estipuladas en el cronograma de actividades, para el respectivo seguimiento por
+parte del coordinador (a) de investigaciones del programa.&nbsp;<!--[if !supportLists]-->
+              <br>
+              <br>g)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Acatar las
+solicitudes de informes extraordinarios que haga la Dirección de
+Investigaciones.<br>
+              <br>&nbsp;h)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Salvaguardar
+los derechos, la seguridad y el bienestar de otros seres vivos que se
+involucren en los procesos investigativos.<br>
+              <br>&nbsp;i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Salvaguardar
+la dignidad, los derechos, la seguridad y el bienestar de los sujetos de
+investigación.<br>
+              <br>&nbsp;j)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Responsabilizarse
+del diligenciamiento y firma de los consentimientos y asentamientos informados,
+en caso de requerirse.<br>
+              <br>&nbsp;k)&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Dedicar
+las horas asignadas para investigación, exclusivamente para la ejecución del
+respectivo proyecto.<br>
+              <br>l)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Realizar
+la entrega de los productos especificados en el numeral 4.&nbsp;<br>
+              <br>m) Actualizar CvLAC y demás perfiles científicos que posibiliten la
+verificación de requisitos mínimos para el ingreso al grupo de investigación.&nbsp;
+            </p>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-13"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-54">Constancias&nbsp;&nbsp;</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-55"> Los abajo firmantes
+conocemos la propuesta del proyecto y el Reglamento de Propiedad Intelectual y
+Derechos de Autor vigente y estamos de acuerdo con las condiciones pactadas
+para la realización del proyecto que se expresan en la presente Acta, por ello,
+aceptamos las disposiciones establecidas en el Régimen de Propiedad Intelectual
+y Derechos de Autor de la Universidad Mariana referentes a la cesión total de
+los Derechos Patrimoniales de las obras, invenciones y creaciones derivadas del
+proyecto de investigación presentado.&nbsp; &nbsp;<br>&nbsp;Ante el retiro del (la)
+docente Investigador (a) principal o del (la) co investigador (a) de la
+Universidad Mariana en cualquier etapa del proyecto, otorgamos autorización
+para continuar con el desarrollo de la investigación sin restricción sobre el
+acceso a la información a nuevos miembros del Equipo o Grupo de Investigación.
+Para ello, el líder del grupo de investigación adelantará la solicitud de
+inclusión de nuevos investigadores.&nbsp; &nbsp; &nbsp;<br>Los abajo firmantes asumimos el compromiso de obtener los productos
+relacionados en la presente acta, los cuales corresponden con el plan
+estratégico del grupo de investigación al que pertenecemos. En el caso de los
+investigadores que no hemos sido avalados por el grupo de investigación,
+asumimos el compromiso de elaborar y ejecutar un plan de trabajo de producción
+alineado al plan estratégico del grupo, concordante con los resultados del
+proyecto a ejecutar, en aras de cumplir con los requisitos para el ingreso y
+visibilidad en la plataforma GrupLAC del grupo de investigación.&nbsp;
+            </p>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-14"></div>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-56">Modificaciones</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-57">Las modificaciones que surjan durante el desarrollo del Proyecto deberán
+constar expresamente y anexarse a la presente Acta, mediante anexos debidamente
+numerados.</p>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-15"></div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-58">Firmas&nbsp;
+(Participantes Universidad Mariana)&nbsp;</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-59">Rol de los Integrantes en el proyecto: Investigador principal</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-187">
+              <label for="text-0a3f" class="u-custom-font u-font-merriweather u-label u-label-104">Nombre Completo </label>
+              <input type="text" placeholder="" id="text-0a3f" name="txt_nombrecompleto_Firmainvestigadorprincipal" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-188">
+              <label for="text-bc5e" class="u-custom-font u-font-merriweather u-label u-label-105">Firma</label>
+              <input type="text" placeholder="" id="text-bc5e" name="txt_firma_FIrmainvestigadorprincipal" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-60">________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-61">Rol de los Integrantes en el proyecto:&nbsp;
+ 
+  
+  Co-investigador interno</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-191">
+              <label for="text-89b8" class="u-custom-font u-font-merriweather u-label u-label-106">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-89b8" name="txt_nombrecompleto_Firmacoinvestigador" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-192">
+              <label for="text-c6cd" class="u-custom-font u-font-merriweather u-label u-label-107">Firma</label>
+              <input type="text" placeholder="" id="text-c6cd" name="txt_firma_Firmacoinvestigador" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-62">__________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-63">Rol de los Integrantes en el proyecto: Auxiliar de investigación</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-195">
+              <label for="text-8470" class="u-custom-font u-font-merriweather u-label u-label-108">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-8470" name="txt_nombrecompleto_FirmaAxuliarinvestigacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-196">
+              <label for="text-6f5b" class="u-custom-font u-font-merriweather u-label u-label-109">Firma</label>
+              <input type="text" placeholder="" id="text-6f5b" name="txt_firma_FirmaAxuliarinvestigacion" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-64">___________________________</p>
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-65">Rol de los Integrantes en el proyecto: Auxiliar de investigación</p>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-199">
+              <label for="text-bd4e" class="u-custom-font u-font-merriweather u-label u-label-110">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-bd4e" name="txt_nombrecompleto_FirmaAuxiliarinvestigacion2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-200">
+              <label for="text-8678" class="u-custom-font u-font-merriweather u-label u-label-111">Firma</label>
+              <input type="text" placeholder="" id="text-8678" name="txt_firma_FirmaAuxiliarinvestigacion2" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-border-6 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-16"></div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-66">Firma Cooperante</p>
+            <div class="u-form-group u-label-top u-form-group-203">
+              <label for="text-c102" class="u-custom-font u-font-merriweather u-label u-label-112">Rol de los Integrantes en el proyecto</label>
+              <input type="text" placeholder="" id="text-c102" name="txt_rolintegrante_Firmacooperante" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-204">
+              <label for="text-8bfe" class="u-custom-font u-font-merriweather u-label u-label-113">Nombre Completo</label>
+              <input type="text" placeholder="" id="text-8bfe" name="txt_nombrecompleto_Firmacooperante" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-205">
+              <label for="text-ed48" class="u-custom-font u-font-merriweather u-label u-label-114">Firma</label>
+              <input type="text" placeholder="" id="text-ed48" name="txt_firma_Firmacooperante" class="u-input u-input-rectangle u-radius-12">
+            </div>
+            <div class="u-align-center u-form-group u-form-submit u-label-top">
+              <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-15 u-btn-1">GUARDAR</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+
+            <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
+            <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="8ac1791b5af4c1e484e9b36e44606dc2">
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-palette-5-dark-3 u-footer" id="sec-3d15"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://www.umariana.edu.co/direccion-investigaciones/" class="u-image u-logo u-image-1" data-image-width="1003" data-image-height="528">
+          <img src="{% static 'img/logotipoconacreditacin-02.png' %} " class="u-logo-image u-logo-image-1">
+        </a>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://www.umariana.edu.co/direccion-investigaciones/" target="_blank">
+        <span>Website SIUMAR</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder InnoSoft</span>
+      </a>. 
+    </section>
+
+  {% render_block "js" %}
+
+            {% block content %}
+              {% placeholder "content" %}
+            {% endblock content %}
+  
+</body></html>

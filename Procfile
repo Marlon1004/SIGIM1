@@ -1,0 +1,1 @@
+web: gunicorn  buscopoli2.wsgi --log-file -

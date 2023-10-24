@@ -1,0 +1,753 @@
+{% load cms_tags menu_tags sekizai_tags %}
+
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es" {% load static %}><head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​ANEXO Formato proyecto de Desarrollo Tecnológico, ​TENER EN CUENTA:&nbsp;Este es un instructivo y a la vez un formato para la presentación de proyectos. Debe ser diligenciado completamente. Para facilitar la lectura del proyecto, las nota​s al pie deben ser&nbsp; borradas a la hora de incluir la información del proyecto.&nbsp;Para el diligenciamiento utilizar Times New Roman 12 e interlineado de 1,5, color negro o&nbsp; automático, justificado.​, ​Profesores investigadores​, Estudiantes en formación, ​Productos esperados​">
+    <meta name="description" content="">
+    <title>Creación Proyecto Innovación</title>
+
+    {% load static%}
+
+    <link rel="stylesheet" href="{% static 'css/nicepage_innovacion.css'%}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Página-1.css'% }" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery_innovacion.js'%} " defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage_innovacion.js'%}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+    
+    <link rel="shortcut icon" href="{% static 'img/logo.jpg'%}">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "{% static 'img/logotipoconacreditacin-02.png' %} "
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página 1">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+    {% render_block "css" %}
+
+
+</head>
+
+
+
+  <body data-home-page="Página-1.html" data-home-page-title="Página 1" class="u-body u-xl-mode" data-lang="es">
+
+    {% cms_toolbar %}
+
+
+    <form method="POST" action="{% url 'guardar_datos' %}">
+    {% csrf_token %}
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre">
+    <!-- Agrega más campos aquí -->
+    <button type="submit">Guardar</button>
+    </form>
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+    <section class="u-clearfix u-section-10" id="sec-66a6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-form u-form-1">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-4" style="padding: 10px;">
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-1">Productos esperados de la investigación<a href="#_ftn1" name="_ftnref1" title="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"><!--[if !supportFootnotes]--><b>[13]</b><!--[endif]-->
+              </a>
+              <br>
+            </p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-2"><b>Tipología&nbsp;</b>
+            </p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-3">Tipo: <b>Resultados de Nuevo Conocimiento</b><b></b><b>(Obligatorio: mínimo 2 productos
+seleccionados)</b><b></b>
+            </p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-4"><b>Nombre del producto:&nbsp;</b>Artículos de
+Investigación&nbsp; A1
+            </p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-5">
+              <label for="text-86fe" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-86fe" name="txt_cantidad_NC_A1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-6">
+              <label for="text-2dd7" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-2dd7" name="txt_indicador_NC_A1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-7">
+              <label for="text-c777" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-c777" name="txt_medioVerificacion_NC_A1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-5">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Artículos de
+Investigación&nbsp; A2</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-9">
+              <label for="text-c8fc" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-c8fc" name="txt_cantidad_NC_A2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-10">
+              <label for="text-fa2a" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-fa2a" name="txt_indicador_NC_A2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-11">
+              <label for="text-4b64" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-4b64" name="txt_medioVerificacion_NC_A2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Artículos de
+Investigación&nbsp; B</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-13">
+              <label for="text-8184" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-8184" name="txt_cantidad_NC_B" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-14">
+              <label for="text-0055" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-0055" name="txt_indicador_NC_B" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-15">
+              <label for="text-d769" class="u-custom-font u-font-merriweather u-label">EntradaMedio de Verificación</label>
+              <input type="text" placeholder="" id="text-d769" name="txt_medioVerificacion_NC_B" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-7">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Artículos de
+Investigación&nbsp; C</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-17">
+              <label for="text-1742" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-1742" name="txt_cantidad_NC_C" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-18">
+              <label for="text-ec69" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-ec69" name="txt_indicador_NC_C" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-19">
+              <label for="text-789f" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-789f" name="txt_medioVerificacion_NC_C" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-8">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Artículos de
+Investigación&nbsp; D</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-21">
+              <label for="text-a572" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-a572" name="txt_cantidad_NC_D" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-22">
+              <label for="text-1ba1" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-1ba1" name="txt_indicador_NC_D" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-23">
+              <label for="text-6070" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-6070" name="txt_medioVerificacion_NC_D" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-9">Nombre del Producto: Capítulo en libro resultado
+de investigación&nbsp;&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-25">
+              <label for="text-855f" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-855f" name="txt_cantidad_NC_Notascientificas" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-26">
+              <label for="text-0b88" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-0b88" name="txt_indicador_NC_Notascientificas" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-27">
+              <label for="text-c35f" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-c35f" name="txt_medioVerificacion_NC_Notascientificas" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-10">Nombre del Producto:Productos
+tecnológicos patentados o en proceso de solicitud de patente&nbsp;</p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-11">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vía PCT o tradicional</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-30">
+              <label for="text-34a3" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-34a3" name="txt_cantidad_NC_viaPCT" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-31">
+              <label for="text-eff9" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-eff9" name="txt_indicador_NC_viaPCT" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-32">
+              <label for="text-4de7" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-4de7" name="txt_medioVerificacion_NC_viaPCT" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Modelo de Utilidad</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-34">
+              <label for="text-9b7d" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-9b7d" name="txt_cantidad_NC_modeloU" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-35">
+              <label for="text-96d8" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-96d8" name="txt_indicador_NC_modeloU" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-36">
+              <label for="text-6fce" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-6fce" name="txt_medioVerificacion_modeloU" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-13">Nombre del Producto: Variedades
+vegetales&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-38">
+              <label for="text-3d27" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-3d27" name="txt_cantidad_NC_variedadV" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-39">
+              <label for="text-ee86" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-ee86" name="txt_indicador_NC_variedadesV" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-40">
+              <label for="text-829b" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-829b" name="txt_medioVerificacion_NC_variedadesV" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-14">Nombre del producto: Nuevas razas
+animales&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-42">
+              <label for="text-6dd9" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-6dd9" name="txt_cantidad_NC_razasA" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-43">
+              <label for="text-930e" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-930e" name="txt_indicador_NC_razasA" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-44">
+              <label for="text-1186" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-1186" name="txt_medioVerificacion_NC_razasA" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-1"></div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-15"> Tipo:&nbsp; <b>Apropiación Social del Conocimiento
+y Divulgación Pública de la Ciencia</b><b></b><b>(Obligatorio: mínimo 2 productos
+seleccionados)</b><b></b>
+            </p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-16">Nombre Producto: Procesos de
+apropiación social del conocimiento</p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-17">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Para el
+fortalecimiento o solución de asuntos de interés social&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-49">
+              <label for="text-7ce1" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-7ce1" name="txt_cantidad_AD_apropiacionS1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-50">
+              <label for="text-a369" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-a369" name="txt_indicador_AD_apropiacionS1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-51">
+              <label for="text-85cc" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-85cc" name="txt_medioVerificacion_AD_apropiacionS1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-52">
+              <label for="text-e816" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-e816" name="txt_cantidad_AD_apropiacionS1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-53">
+              <label for="text-88a4" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-88a4" name="txt_indicador_Ad_apropiacionS2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-54">
+              <label for="text-af0e" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-af0e" name="txt_medioVerificacion_AD_apropiacionS2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Generación de insumos de política pública y normatividad </p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-56">
+              <label for="text-2b1a" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-2b1a" name="txt_cantidad_AD_generacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-57">
+              <label for="text-d871" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-d871" name="txt_idnicador_AD_generacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-58">
+              <label for="text-0fcc" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-0fcc" name="txt_medioVerificacion_AD_generacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-19">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fortalecimiento de
+cadenas productivas</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-60">
+              <label for="text-3185" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-3185" name="txt_cantidad_AD_fortalecimiento" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-61">
+              <label for="text-c8e6" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-c8e6" name="txt_indicador_AD_fortalecimiento" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-62">
+              <label for="text-a84a" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-a84a" name="txt_medioVerificacion_AD_fortalecimiento" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-20">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Resultados del
+trabajo conjunto entre un centro de ciencia y un grupo</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-64">
+              <label for="text-4e7b" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-4e7b" name="txt_cantidad_AD_resultados" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-65">
+              <label for="text-c6fc" class="u-custom-font u-font-merriweather u-label">Indicador </label>
+              <input type="text" placeholder="" id="text-c6fc" name="txt_indicador_AD_resultados" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-66">
+              <label for="text-a828" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-a828" name="txt_medioVerificacion_AD_resultados" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-21">Nombre del Producto: Circulación del
+conocimiento especializado</p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-22">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Eventos
+científicos con componentes de apropiación&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-69">
+              <label for="text-5d71" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-5d71" name="txt_cantidad_AD_eventosC" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-70">
+              <label for="text-23fc" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-23fc" name="txt_indicador_AD_eventosC" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-71">
+              <label for="text-6f8a" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-6f8a" name="txt_medioVerificacion_AD_eventos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-23">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Participación
+en redes de conocimiento especializado&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-73">
+              <label for="text-7123" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-7123" name="txt_cantidad_AD_participacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-74">
+              <label for="text-a588" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-a588" name="txt_indicador_AD_participacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-75">
+              <label for="text-01cb" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-01cb" name="txt_medioVerificacion_AD_participacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-24">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Talleres
+de creación, eventos culturales y artísticos</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-77">
+              <label for="text-32d2" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-32d2" name="txt_cantidad_AD_talleres" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-78">
+              <label for="text-a50d" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-a50d" name="txt_indicador_AD_talleres" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-79">
+              <label for="text-fc24" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-fc24" name="txt_medioVerificacion_AD_talleres" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-25">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Documentos de trabajo (working papers)</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-81">
+              <label for="text-ffaf" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-ffaf" name="txt_cantidad_AD_documentos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-82">
+              <label for="text-247f" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-247f" name="txt_indicador_AD_documentos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-83">
+              <label for="text-9141" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-9141" name="txt_medioVerificacion_AD_documentos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nueva
+secuencia genética&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-85">
+              <label for="text-e26c" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-e26c" name="txt_cantidad_AD_nuevaS" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-86">
+              <label for="text-db3a" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-db3a" name="txt_indicador_AD_nuevaS" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-87">
+              <label for="text-fa05" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-fa05" name="txt_medioVerificacion_AD_nuevaS" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-27">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ediciones
+de revista científica o de libros resultado de investigación&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-89">
+              <label for="text-e3ec" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-e3ec" name="txt_cantidad_AD_ediciones" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-90">
+              <label for="text-4c8a" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-4c8a" name="txt_indicador_AD_ediciones" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-91">
+              <label for="text-6a08" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-6a08" name="txt_medioVerificacion_AD_ediciones" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-28">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Informe
+final de investigación&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-93">
+              <label for="text-cf91" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-cf91" name="txt_cantidad_AD_informeFinal" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-94">
+              <label for="text-8916" class="u-custom-font u-font-merriweather u-label">indicador</label>
+              <input type="text" placeholder="" id="text-8916" name="txt_indicador_AD_informeFinal" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-95">
+              <label for="text-4e12" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-4e12" name="txt_medioVerificacion_AD_informeFinal" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Informe
+técnico</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-97">
+              <label for="text-024d" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-024d" name="txt_cantidad_AD_informeTecnico" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-98">
+              <label for="text-ea53" class="u-custom-font u-font-merriweather u-label">indicador</label>
+              <input type="text" placeholder="" id="text-ea53" name="txt_indicador_AD_informaTecnico" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-99">
+              <label for="text-185d" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-185d" name="txt_medioVerificacion_AD_informeTecnico" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-30">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Consultorías
+(científico-tecnológicas e investigación-creación&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-101">
+              <label for="text-098e" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-098e" name="txt_cantidad_AD_consultorias" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-102">
+              <label for="text-4298" class="u-custom-font u-font-merriweather u-label">indicador</label>
+              <input type="text" placeholder="" id="text-4298" name="txt_indicador_AD_consultorias" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-103">
+              <label for="text-b15f" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-b15f" name="txt_medioVerificacion_AD_consultorias" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-2"></div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-31">Nombre del Producto: Divulgación pública
+de CTel</p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-32">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Publicaciones
+  editoriales no especializadas</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-107">
+              <label for="text-5d17" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-5d17" name="txt_cantidad_AD_publicacionesE" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-108">
+              <label for="text-cfc3" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-cfc3" name="txt_indicador_AD_publicacionesE" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-109">
+              <label for="text-0deb" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-0deb" name="txt_medioVerificacion_AD_publicacionesE" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-33">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Producciones
+de contenido digital</p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sonoro</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-112">
+              <label for="text-8b65" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-8b65" name="txt_cantidad_AD_sonora" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-113">
+              <label for="text-6c35" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-6c35" name="txt_indicador_AD_sonoro" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-114">
+              <label for="text-001c" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-001c" name="txt_medioVerificacion_AD_sonoro" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-35">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Audiovisual</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-116">
+              <label for="text-545c" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-545c" name="txt_cantidad_AD_audiovisual" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-117">
+              <label for="text-667b" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-667b" name="txt_indicador_AD_audiovisual" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-118">
+              <label for="text-4f70" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-4f70" name="txt_medioVerificacion_AD_audiovisual" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-36">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recursos
+gráficos</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-120">
+              <label for="text-d195" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-d195" name="txt_cantidad_AD_recursos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-121">
+              <label for="text-314a" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-314a" name="txt_indicador_AD_recursos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-122">
+              <label for="text-af7c" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-af7c" name="txt_medioVerificacion_AD_recursos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-37">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Producción
+de estrategias y contenidos transmedia</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-124">
+              <label for="text-832c" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-832c" name="txt_cantidad_AD_produccion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-125">
+              <label for="text-0265" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-0265" name="txt_indicador_AD_produccion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-126">
+              <label for="text-166c" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-166c" name="txt_medioVerificacion_AD_produccion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-38">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Desarrollo
+web</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-128">
+              <label for="text-d440" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-d440" name="txt_cantidad_AD_desarrolloWeb" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-129">
+              <label for="text-a17e" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-a17e" name="txt_indicador_AD_desarrolloWeb" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-130">
+              <label for="text-dfb1" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-dfb1" name="txt_medioVerificacion_AD_desarrolloWeb" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-3"></div>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-39"> Tipo: <b>Desarrollo Tecnológico </b><b></b><b>(Obligatorio: mínimo 1 producto
+seleccionado)</b><b></b>
+            </p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-40">Nombre del Producto:
+Productos tecnológicos
+certificados o validados.</p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-41">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Diseño Industrial</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-135">
+              <label for="text-0fb8" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-0fb8" name="txt_cantidad_DT_diseñoIndustrial" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-136">
+              <label for="text-ae54" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" id="text-ae54" name="txt_indicador_DT_diseñoIndustrial" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-137">
+              <label for="text-9b36" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-9b36" name="txt_medioVerificaion_DT_diseñoIndustrial" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-42">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Esquema de
+  circuito integrado</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-139">
+              <label for="text-fdd6" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-fdd6" name="txt_cantidad_DT_esquemaCircuito" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-140">
+              <label for="text-1fb8" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-1fb8" name="txt_indicador_esquemaCircuito" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-141">
+              <label for="text-9485" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-9485" name="txt_medioVerificcaion_DT_esquemaCircuito" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-43">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Software</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-143">
+              <label for="text-0fe9" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-0fe9" name="txt_cantidad_DT_software" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-144">
+              <label for="text-a33a" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-a33a" name="txt_indicador_DT_software" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-145">
+              <label for="text-fad2" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-fad2" name="txt_medioVerificacion_DT_software" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-44">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Planta Piloto</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-147">
+              <label for="text-1fa6" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-1fa6" name="txt_cantidad_DT_plantaPiloto" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-148">
+              <label for="text-984c" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-984c" name="txt_indicador_DT_plantaPiloto" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-149">
+              <label for="text-d791" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-d791" name="txt_medioVerificacion_DT_plantaPiloto" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-45">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Prototipo
+Industrial</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-151">
+              <label for="text-8ff9" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-8ff9" name="txt_cantidad_DT_prototipo" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-152">
+              <label for="text-e77b" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-e77b" name="txt_indicador_DT_prototipo" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-153">
+              <label for="text-4d45" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-4d45" name="txt_medioVerificacion_DT_prototipo" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-46">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Signos distintivos</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-155">
+              <label for="text-73a7" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-73a7" name="txt_cantidad_DT_signosDistintivos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-156">
+              <label for="text-3410" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-3410" name="txt_indicador_DT_signosdistintivos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-157">
+              <label for="text-977b" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-977b" name="txt_medioVerificacion_DT_signosDistintivos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-47">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Producto
+Nutracéutico</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-159">
+              <label for="text-8331" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-8331" name="txt_cantidad_DT_productoN" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-160">
+              <label for="text-a4ec" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-a4ec" name="txt_indicador_DT_productoN" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-161">
+              <label for="text-5402" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-5402" name="txt_medioVerificacion_DT_productoN" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-48">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Creación científica
+y nuevo registro científico</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-163">
+              <label for="text-e190" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-e190" name="txt_cantidad_DT_creacionCientifica" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-164">
+              <label for="text-b000" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-b000" name="txt_indicador_DT_creacionCientifica" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-165">
+              <label for="text-cd32" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-cd32" name="txt_medioVerificacion_DT_creacionN" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-4"></div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-49">Nombre del Producto:Productos
+empresariales</p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-50">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Secreto empresarial</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-169">
+              <label for="text-98fe" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-98fe" name="txt_cantidad_DT_secretoEmpresarial" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-170">
+              <label for="text-4e3f" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-4e3f" name="txt_indicador_DT_secretoEmpresarial" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-171">
+              <label for="text-95ce" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-95ce" name="txt_medioVerificacion_DT_secretoEmpresarial" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-51">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Empresas
+de base tecnológica (spin-off y start-up)&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-173">
+              <label for="text-da0b" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-da0b" name="txt_cantidad_DT_empresasBT" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-174">
+              <label for="text-b710" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-b710" name="txt_indicador_DT_empresasBT" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-175">
+              <label for="text-1f2c" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-1f2c" name="txt_medioVerificacion_DT_empresasBT" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-52">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Empresas
+creativas y culturales&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-177">
+              <label for="text-d600" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-d600" name="txt_Cantidad_DT_empresasCreativas" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-178">
+              <label for="text-61c0" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-61c0" name="txt_indicador_DT_empresasCreativas" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-179">
+              <label for="text-40be" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-40be" name="txt_medioVerificacion_DT_empresasCreativas" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-53">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Innovaciones generadas en la gestión
+  empresarial </p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-181">
+              <label for="text-840c" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-840c" name="txt_cantidad_DT_innovacionesG" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-182">
+              <label for="text-b05a" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-b05a" name="txt_indicador_DT_innovacionG" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-183">
+              <label for="text-300a" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" placeholder="" id="text-300a" name="txt_medioVerificacion_innovacionG" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-54">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Innovaciones
+en procesos, procedimientos y servicios&nbsp;</p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-185">
+              <label for="text-ec86" class="u-custom-font u-font-merriweather u-label">Cantidad (# de productos)</label>
+              <input type="text" placeholder="" id="text-ec86" name="txt_cantidad_DT_innovacionesProceso" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-186">
+              <label for="text-235f" class="u-custom-font u-font-merriweather u-label">Indicador</label>
+              <input type="text" placeholder="" id="text-235f" name="txt_indicador_DT_innovacionProceso" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-187">
+              <label for="text-b8eb" class="u-custom-font u-font-merriweather u-label">Medio de Verificación</label>
+              <input type="text" id="text-b8eb" name="txt_medioVerificacion_DT_innovacionProceso" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Gracias! Tu mensaje ha sido enviado. </div>
+            <div class="u-form-send-error u-form-send-message"> No se puede enviar su mensaje. Por favor, corrija los errores y vuelva a intentarlo. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="8ac1791b5af4c1e484e9b36e44606dc2">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="u-border-2 u-border-black u-border-no-bottom u-border-no-left u-border-no-top u-clearfix u-section-11" id="tbl_tipologia">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
+        <p class="u-align-left u-custom-font u-font-merriweather u-text u-text-1"><!--[if !supportFootnotes]-->[23]<!--[endif]--> Se debe definir los productos
+medibles y cuantificables que se alcanzarán con el desarrollo del proyecto. Es
+necesario fijar como mínimo un resultado por cada objetivo específico e indicar
+las características de nuevo conocimiento generado, medios de verificación y
+los indicadores. Estos resultados deberán alcanzarse en su totalidad en el
+marco del desarrollo del proyecto y deberán ser coherentes con la metodología y
+evidenciar el cumplimiento de los objetivos del proyecto.&nbsp;<!--[if !supportFootnotes]-->
+          <br>
+          <br>[24]<!--[endif]--> La tipología a la que se asocia el indicador busca
+consolidar el grado de incidencia del resultado, para ello es importante que el
+investigador maneje el documento conceptual del Modelo vigente de Medición de
+grupos e investigadores de Minciencias. Nuevo
+Conocimiento: campo que orienta la producción científica de nuevo conocimiento
+de alto impacto en número de artículos publicados y patentes (mínimo se deben
+registrar dos productos). Apropiación Social: orienta la producción e impacto
+que da respuesta al componente de apropiación social y circulación del
+conocimiento y además al desarrollo sostenible de la región en uno o varios de
+sus componentes (mínimo 2 productos). Desarrollo Tecnológico: productos
+generados susceptibles de transferencia (mínimo 1). Formación de Recurso
+Humano: formación de nuevos investigadores (mínimo 1).&nbsp; En aquellas investigaciones que se realicen
+con otros países y que involucren productos de impacto relacionados con los
+indicadores anteriores
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+  {% render_block "js" %}
+
+            {% block content %}
+              {% placeholder "content" %}
+            {% endblock content %}
+  
+</body></html>

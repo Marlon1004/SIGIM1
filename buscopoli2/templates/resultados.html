@@ -1,0 +1,99 @@
+{% load cms_tags menu_tags sekizai_tags %}
+<html {% load static %}>
+
+<head>
+  <title>Buscopoli</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="{% static 'img/logo.jpg'%}">
+    {% load static%}
+
+    <!-- Bootstrap -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+     <!-- Fonts -->
+    
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+     
+
+    <!-- Styles -->
+    <link href="{% static 'css/gestionResultados.css'%}" rel="stylesheet">
+
+  {% render_block "css" %}
+
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <!-- Heading -->
+  <header>
+    <nav>
+      <ul>
+        <div>
+            <img class="imgHeader" src="{% static 'img/BUSCOPOLI-03.jpg'%}" alt="imagen 2">
+            <a class="boton transparente"  target="blank" ><h3 class="blanco">Mi Perfil</h3>
+            <a href="#"><img class="imgfooter3" src="{% static 'img/logos/user.png'%}" alt=""></a>
+        </div>
+      </ul>
+      <ul>
+        <div>
+          <fieldset class="busquedas">
+            <input class="buscar large" type="search" id="search" placeholder="Buscar ...">
+            <a class="btn enlaces busqueda " href="#" target="_blank">
+            <img class="imgfooter2" src="{% static 'img/logos/lupa.png'%}" alt=""></a>
+          </fieldset>
+        </div>
+      </ul>
+    </nav>
+  </header> 
+  
+  
+        <div >
+            <table class="tabla2">
+                <tr>
+                  <th><a class="boton large btn btn-outline-light btn-floating m-1 enlaces"  target="blank" href="#">Investigacion en Servicio Escrito</a></th>
+                  <th><a class="boton large btn btn-outline-light btn-floating m-1 enlaces"  target="blank" href="#">Grupo</a></th>
+                  <th><a class="boton large btn btn-outline-light btn-floating m-1 enlaces"  target="blank" href="#">Convocatoria</a></th>
+                </tr>
+            </table>
+        </div>
+        <div class="contenedor">
+          <img class="imgfooter" src="{% static 'img/imgnuevas/piezaletrero .png'%}" />
+          <div class="centrado"><h1 class="tamano">RESULTADOS DE BÚSQUEDA</h1></div>
+        </div>
+        <div class="resu"><h4>0 numero de resultados para:</h4>
+          <h4>Busqueda en la coleccion completa del siumar:</h4></div>
+          
+        <table class="tabla3">  
+          <tr>
+            <th class="th2">
+              <img class="imgHeader2" src="{% static 'img/BUSCOPOLI-03.jpg'%}" alt="imagen 2">
+            </th>
+            <th>
+              <table class="tabla">
+                <thead >
+                  <th>RESULTADOS</th>
+                  <th>NUMERO DE RESULTADOS</th>
+                </thead>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </th>  
+          </tr>  
+        </table>
+  {% render_block "js" %}
+
+              {% block content %}
+                {% placeholder "content" %}
+              {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% load cms_tags menu_tags sekizai_tags %}
+<html {% load static %}>
+
+<head>
+  <title>Buscopoli </title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="{% static 'img/logo.jpg'%}">
+    {% load static%}
+
+    <!-- Bootstrap -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+     <!-- Fonts -->
+    
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+     
+
+    <!-- Styles -->
+    <link href="{% static 'css/gestionlogin.css'%}" rel="stylesheet">
+
+    {% render_block "css" %}
+
+
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <div class="contenedor">
+    <div id="central">
+      <div class="cat" >
+        <img class="img2" src="{% static 'img/BUSCOPOLI-03.jpg'%}" alt="imagen 2">
+      </div>
+      <div id="login">
+          <form id="loginform">
+
+            <div class="form-group row" id="user-group">
+              <img class="imgfooter2" src="{% static 'img/logos/usuario.png'%}" alt="">
+              <div class="col-sm-10">
+                <input type="text" name="usuario" placeholder="Usuario" required>
+              </div>
+            </div>
+
+            <div class="form-group row" id="user-group">
+              <img class="imgfooter2" src="{% static 'img/logos/llave.png' %}" alt="">
+              <div class="col-sm-10">
+                <input type="password" placeholder="Contraseña" name="password" required>
+              </div>
+            </div>
+              <button type="submit" title="Ingresar" name="Ingresar">
+                <img class="imgfooter2" src="{% static 'img/logos/cursor.png'%}" alt="">Ingresar</button>
+          </form>
+      </div>    
+    </div>  
+  </div>
+  {% render_block "js" %}
+
+              {% block content %}
+                {% placeholder "content" %}
+              {% endblock content %}
+
+</body>
+</html>
+

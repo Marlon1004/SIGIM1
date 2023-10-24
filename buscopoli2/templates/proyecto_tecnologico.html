@@ -1,0 +1,842 @@
+{% load cms_tags menu_tags sekizai_tags %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es" {% load static %}><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​ANEXO Formato proyecto de Desarrollo Tecnológico, ​TENER EN CUENTA:&nbsp;Este es un instructivo y a la vez un formato para la presentación de proyectos. Debe ser diligenciado completamente. Para facilitar la lectura del proyecto, las nota​s al pie deben ser&nbsp; borradas a la hora de incluir la información del proyecto.&nbsp;Para el diligenciamiento utilizar Times New Roman 12 e interlineado de 1,5, color negro o&nbsp; automático, justificado.​, ​Profesores investigadores​, Estudiantes en formación, ​Productos esperados​">
+    <meta name="description" content="">
+
+    <title>Creación Proyecto Tecnologico</title>
+
+    {% load static%}
+
+    <link rel="stylesheet" href="{% static 'css/nicepage_tecnologico.css'%}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Página-1_tecnologico.css'% }" media="screen">
+
+
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery_tecnologico.js'%}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage_tecnologico.js'%}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+
+
+    <link rel="shortcut icon" href="{% static 'img/logo.jpg'%}">
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "{% static 'img/logotipoconacreditacin-02.png' %}"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página 1">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInputD/">
+
+    {% render_block "css" %}
+
+</head>
+
+
+  <body data-home-page="Página-1.html" data-home-page-title="Página 1" class="u-body u-xl-mode" data-lang="es">
+
+    {% cms_toolbar %}
+
+  <header class="u-clearfix u-header u-header" id="sec-fe7b"><div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'img/usudelogo-UNIVERSIDADMARIANA.png' %}" alt="" data-image-width="447" data-image-height="462">
+        <img class="u-image u-image-contain u-image-round u-radius-10 u-image-2" src="{% static 'img/Buscopolilogo.png' %}" alt="" data-image-width="962" data-image-height="688">
+        <p class="u-align-center u-custom-font u-font-merriweather u-text u-text-1"><b>FORMATO INSTITUCIONAL PARA LA PRESENTACIÓN DE
+PROYECTOS DE DESARROLLO CONVOCATORIA</b>
+        </p>
+        <h4 class="u-custom-font u-font-merriweather u-text u-text-default u-text-2">PROCESO:Gestión de la Investigación</h4>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="tbl_informacion_general">
+      <div class="u-clearfix u-sheet u-sheet-1">
+      <center> <h4 class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-1">Formato proyecto de
+Desarrollo Tecnológico</h4> </center>
+
+
+   <form method="POST" action="{% url 'guardar_datos' %}">
+        {% csrf_token %}
+
+
+
+        <div class="u-expanded-width u-form u-form-1">
+
+
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-1" style="padding: 10px;">
+            <div class="u-form-group u-form-group-1">
+              <label for="text-daf2" class="u-custom-font u-font-merriweather u-label u-label-1">Titulo del proyecto </label>
+              <br><!--[endif]--> Debe presentar las categorías temáticas principales y no deberá sobrepasar las 20 palabras.<!--[if !supportFootnotes]-->
+              <br>
+                <input type="text" placeholder="" id="text-daf2" name="nombre_proyecto" class="u-input u-input-rectangle u-radius-8">
+            </div>
+              <br>
+            <div class="u-form-group u-form-group-2">
+              <label for="text-8c86" class="u-custom-font u-font-merriweather u-label u-label-2">Palabras Claves </label>
+              <br><!--[endif]--> Incluir máximo cinco (5) palabras clave que describan el objeto del proyecto.<!--[if !supportFootnotes]-->
+              <br>
+                <input type="text" placeholder="" id="text-8c86" name="palabras_claves" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="text-c813" class="u-custom-font u-font-merriweather u-label u-label-3">Convocatoria</label>
+              <input type="text" placeholder="" id="text-c813" name="nombre_de_convocatoria" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-group-4">
+              <label for="text-4f3b" class="u-custom-font u-font-merriweather u-label u-label-4">Duración del proyecto (en meses)</label>
+              <input type="text" placeholder="" id="text-4f3b" name="tiempo_en_meses" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-group-5">
+              <label for="text-1f9e" class="u-custom-font u-font-merriweather u-label u-label-5">Lugar de ejecución del proyecto</label>
+              <input type="text" placeholder="" id="text-1f9e" name="Lugar_Ejecucion" class="u-input u-input-rectangle u-radius-8">
+            </div>
+              <br>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-partition-factor-4 u-form-text u-text u-text-3"><b>Foco o reto atendido&nbsp;</b>
+            </p>
+
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-4">Foco</p>
+
+              <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-8">
+              <input type="checkbox" id="checkbox-f52d" name="tecnologia_convergentes_e_industrias" value="True" class="u-field-input">
+              <label for="checkbox-f52d" class="u-field-label">Tecnología convergentes e industrias 4.0</label>
+            </div>
+
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-9">
+              <input type="checkbox" id="checkbox-984b" name="biotecnologia_bioeconomia_economia" value="True" class="u-field-input">
+              <label for="checkbox-984b" class="u-field-label">Biotecnología, bioeconomía, economía creativa y medio ambiente </label>
+            </div>
+
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-10">
+              <input type="checkbox" id="checkbox-cecd" name="industrias_creativas_culturales" value="True" class="u-field-input">
+              <label for="checkbox-cecd" class="u-field-label">Industrias creativas y culturales y patrimonio cultural</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-11">
+              <input type="checkbox" id="checkbox-b782" name="energias_sostenibles_economia_circular" value="True" class="u-field-input">
+              <label for="checkbox-b782" class="u-field-label">Energías sostenibles, economía circular y cambio climático</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-12">
+              <input type="checkbox" id="checkbox-9a78" name="innovacion_salud_bienestar" value="True" class="u-field-input">
+              <label for="checkbox-9a78" class="u-field-label">Innovación en salud y bienestar </label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-13">
+              <input type="checkbox" id="checkbox-888e" name="conocimiento_educacion_para_inclusion" value="True" class="u-field-input">
+              <label for="checkbox-888e" class="u-field-label">Conocimiento y educación para la inclusión social y el desarrollo de habilidades socioemocionales </label>
+            </div>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-5"><b>Retos</b>
+            </p>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-15">
+              <input type="checkbox" id="checkbox-969b" name="promocion_de_productividad" value="True" class="u-field-input">
+              <label for="checkbox-969b" class="u-field-label">Promoción de la productividad y optimización del cultivo de cacao.</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-16">
+              <input type="checkbox" id="checkbox-fd96" name="automatizacion_de_produccion" value="True" class="u-field-input">
+              <label for="checkbox-fd96" class="u-field-label">Automatización de la producción para suplir la escasa mano de obra. </label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-17">
+              <input type="checkbox" id="checkbox-e4c9" name="diversificacion_en_presentaciones" value="True" class="u-field-input">
+              <label for="checkbox-e4c9" class="u-field-label">Diversificación en las presentaciones comerciales de la panela.</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-18">
+              <input type="checkbox" id="checkbox-f28d" name="pulverizadora_de_leche_polvo" value="True" class="u-field-input">
+              <label for="checkbox-f28d" class="u-field-label">Pulverizadora de leche en polvo para la optimización del mercado de leche</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-19">
+              <input type="checkbox" id="checkbox-edef" name="factibilidad_de_planta_concentrados" value="True" class="u-field-input">
+              <label for="checkbox-edef" class="u-field-label">Factibilidad de una planta de concentrados para bovinos de leche, o maquila de concentrados.</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-20">
+              <input type="checkbox" id="checkbox-1b2d" name="mejoramiento_estatus_sanitario_bovino" value="True" class="u-field-input">
+              <label for="checkbox-1b2d" class="u-field-label">Mejoramiento del estatus sanitario bovino y buenas prácticas ganaderas.</label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-21">
+              <input type="checkbox" id="checkbox-6070" name="erradicacion_disminucion_de_punta_morada" value="True" class="u-field-input">
+              <label for="checkbox-6070" class="u-field-label">Erradicación o disminución de la punta morada de los cultivos de papa en los suelos. </label>
+            </div>
+            <div class="u-form-checkbox u-form-group u-form-partition-factor-2 u-form-group-22">
+              <input type="checkbox" id="checkbox-ac31" name="disminucion_de_costos" value="True" class="u-field-input">
+              <label for="checkbox-ac31" class="u-field-label">Disminución de costos de producción de papa.</label>
+              <br>
+
+            </div>
+              </p>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-1"></div>
+            
+
+
+
+
+
+
+            <section class="u-clearfix u-section-3" id="sec-5dfc">
+
+              <div class="u-clearfix u-sheet u-sheet-1">
+                <div class="u-expanded-width u-form u-form-1">
+        
+
+                  <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-2" style="padding: 10px;">
+                    <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-1"></div>
+                    </p>
+                      <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-1"><b>Profesores investigadores</b>
+                    </p>
+                    </p>
+                    <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-2"><b>Rol en el proyecto:&nbsp;</b><b>Investigador principal o líder del proyecto</b>
+                    </p>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-4">
+                      <label for="text-f7e3" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Nombres y apellidos" id="text-f7e3" name="txt_nombre_InvestigadorP" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-5">
+                      <label for="text-f9d5" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Documento de Identidad" id="text-f9d5" name="txt_documentoIdentidad_InvestigadorP" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-6">
+                      <label for="text-96ab" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Grupo de investigación" id="text-96ab" name="txt_grupoInvestigacion_InvestigadorP" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-7">
+                      <label for="text-d72e" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Nivel de estudios [1]" id="text-d72e" name="txt_nivelEstudio_investigadorP" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-8">
+                      <label for="text-c160" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Institución a la que se encuentra vinculado" id="text-c160" name="txt_institucionVinculado_InvestigadorP" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-9">
+                      <label for="text-40b2" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Funciones" id="text-40b2" name="txt_funciones_InvestigadorP" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-10">
+                      <label for="text-60b8" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Dedicación semanal" id="text-60b8" name="txt_dedicacionSemanal_InvestigadorP" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+
+                   
+                  </form>
+        
+                  
+                </div>
+              </div>
+                <br>
+            </section>
+        
+        
+          <div class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form">
+
+              <div class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form">
+
+
+
+
+
+                    <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-1"><b>Rol en el proyecto:&nbsp;</b><b>Co – investigador interno<a href="#_ftn1" name="_ftnref1" title="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"><!--[if !supportFootnotes]-->
+                        </a></b>
+                        <br><!--[endif]--> Experto temático que contribuye y apoya técnica y operativamente las actividades de CT+I durante el ciclo de vida del proyecto. Participa directamente desde su campo de experticia.&nbsp;<!--[if !supportFootnotes]-->
+                      <br>
+
+                    </p>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-2">
+                      <label for="text-f7e3" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Nombres y apellidos" id="text-f7e3" name="txt_nombre_InvestigadorInterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-3">
+                      <label for="text-f9d5" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Documento de Identidad" id="text-f9d5" name="txt_documentoIdentidad_InvestigadorInterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-4">
+                      <label for="text-96ab" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Grupo de investigación" id="text-96ab" name="txt_grupoInvestigacion_InvestigadorInterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-5">
+                      <label for="text-d72e" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Nivel de estudios " id="text-d72e" name="txt_nivelEstudio_investigadorInterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-6">
+                      <label for="text-c160" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Institución a la que se encuentra vinculado" id="text-c160" name="txt_institucionVinculado_InvestigadorInterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-7">
+                      <label for="text-40b2" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Funciones" id="text-40b2" name="txt_funciones_InvestigadorInterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-8">
+                      <label for="text-60b8" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Dedicación semanal" id="text-60b8" name="txt_dedicacionSemanal_InvestigadorInterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+
+
+
+            </div>
+          </div>
+        
+            <br>
+
+            <div class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form">
+              <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-1"><b>Rol en el proyecto:&nbsp;</b><b>Co – investigador externo<a href="#_ftn1" name="_ftnref1" title="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">
+              </a></b>
+                  <br><!--[endif]--> persona natural que se vincula a un proyecto con una dedicación específica bajo la figura de “contrapartida en especie”, debidamente avalada por la institución que lo vincula, debe figurar en la de interés y compromiso institucional.&nbsp;<!--[if !supportFootnotes]-->
+                      <br>
+
+                    </p>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-2">
+                      <label for="text-f7e3" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Nombres y apellidos" id="text-f7e3" name="txt_nombre_InvestigadorExterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-3">
+                      <label for="text-f9d5" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Documento de Identidad" id="text-f9d5" name="txt_documentoIdentidad_InvestigadorExterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-4">
+                      <label for="text-96ab" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Grupo de investigación" id="text-96ab" name="txt_grupoInvestigacion_InvestigadorExterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-4 u-form-group-5">
+                      <label for="text-d72e" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Nivel de estudios " id="text-d72e" name="txt_nivelEstudio_investigadorExterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-6">
+                      <label for="text-c160" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Institución a la que se encuentra vinculado" id="text-c160" name="txt_institucionVinculado_InvestigadorExterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-7">
+                      <label for="text-40b2" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Funciones" id="text-40b2" name="txt_funciones_InvestigadorExterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-3 u-form-group-8">
+                      <label for="text-60b8" class="u-form-control-hidden u-label"></label>
+                      <input type="text" placeholder="Dedicación semanal" id="text-60b8" name="txt_dedicacionSemanal_InvestigadorExterno" class="u-input u-input-rectangle u-radius-8">
+                    </div>
+
+            </div>
+
+
+      <div class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form">
+
+          <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-1"><b>Estudiante en formación&nbsp;</b>
+            </p>
+            <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-2"><b>Rol en el proyecto:&nbsp;</b><b>Semillerista – investigador principal</b>
+              <br>
+            </p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-3">
+              <label for="text-f7e3" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Nombres y apellidos" id="text-f7e3" name="txt_nombre_Auxiliar_Interno1" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-4">
+              <label for="text-f9d5" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Documento de Identidad" id="text-f9d5" name="txt_documentoIdentidad_Auxliar_Interno1" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-5">
+              <label for="text-d72e" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Codigo Estudiantil" id="text-d72e" name="txt_codigoEstudiantil" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-6">
+              <label for="text-c160" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Institución a la que se encuentra vinculado" id="text-c160" name="txt_institucionVinculado_Auxliar_Interno1" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-7">
+              <label for="text-40b2" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Funciones" id="text-40b2" name="txt_funciones_Auxliar_Interno1" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-8">
+              <label for="text-60b8" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Dedicación semanal" id="text-60b8" name="txt_dedicacionSemanal_Auxliar_Interno1" class="u-input u-input-rectangle u-radius-8">
+            </div>
+
+
+
+      </div>
+
+
+
+
+
+      <div class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form">
+
+          <p class="u-align-left u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-1"><b>Rol en el proyecto:&nbsp;</b><b>Coinvestigador</b>
+              <br>
+            </p>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-2">
+              <label for="text-f7e3" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Nombres y apellidos" id="text-f7e3" name="txt_nombre_Auxiliar_externo" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-3">
+              <label for="text-f9d5" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Documento de Identidad" id="text-f9d5" name="txt_documentoIdentidad_Auxiliar_externo" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-4">
+              <label for="text-d72e" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Codigo estudiantil" id="text-d72e" name="txt_codigoEstudiantil_Coinvestigador" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-5">
+              <label for="text-c160" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Institución a la que se encuentra vinculado" id="text-c160" name="txt_institucionVinculado_Auxiliar_externo" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-6">
+              <label for="text-40b2" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Funciones" id="text-40b2" name="txt_funciones_Auxiliar_externo" class="u-input u-input-rectangle u-radius-8">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-form-group-7">
+              <label for="text-60b8" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Dedicación semanal" id="text-60b8" name="txt_dedicacionSemanal_Auxiliar_externo" class="u-input u-input-rectangle u-radius-8">
+            </div>
+
+            <div class="u-form-send-message u-form-send-success"> Gracias! Tu mensaje ha sido enviado. </div>
+            <div class="u-form-send-error u-form-send-message"> No se puede enviar su mensaje. Por favor, corrija los errores y vuelva a intentarlo. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="8ac1791b5af4c1e484e9b36e44606dc2">
+            <br>
+
+      </div>
+
+
+
+
+
+
+
+
+      <div class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form">
+
+
+          <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-label-top u-line u-line-horizontal u-line-1"></div>
+            <div class="u-form-group u-label-top u-form-group-2">
+              <label for="text-9cc6" class="u-custom-font u-font-merriweather u-label u-label-1">4. Resumen ejecutivo </label>
+                <br> <!--[endif]--> <h5> Información mínima necesaria para comunicar de manera precisa los contenidos y alcances del proyecto. Dicho resumen debe articular los diversos componentes del proyecto y se escribirá en un máximo de 250 palabras.</h5> <!--[if !supportFootnotes]-->
+              <br>
+
+              <input type="text" placeholder="" id="text-9cc6" name="txt_4resumen_ejecutivo" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+
+            <div class="u-form-group u-label-top u-form-group-3">
+              <label for="text-7e52" class="u-custom-font u-font-merriweather u-label u-label-2">5.Objetivos: general y específicos </label>
+              <br><!--[endif]--> General: Enunciado que define de manera concreta el planteamiento del problema o necesidad y se inicia con un verbo en modo infinitivo, es medible, alcanzable y conlleva a una meta. Específicos: Enunciados que dan cuenta de la secuencia lógica para alcanzar el objetivo general del proyecto.&nbsp;<!--[if !supportFootnotes]-->
+              <br>
+              <br>
+                <input type="text" placeholder="" id="text-7e52" name="txt_5objetivos" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-4">
+              <label for="text-6c36" class="u-custom-font u-font-merriweather u-label u-label-3">6.	Descripción del problema o necesidad ( problemas específicos asociados a un sector o a un territorio y no causas al interior de una institución) </label>
+              <br><!--[endif]--> Delimitación clara y precisa del objeto de la investigación y desarrollo que se realiza por medio de una pregunta, no deberá sobrepasar las 1000 palabras&nbsp;<!--[if !supportFootnotes]-->
+              <br>
+                <input type="text" id="text-6c36" name="txt_6descripcion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+
+            <div class="u-form-group u-label-top u-form-group-5">
+              <label for="text-83e1" class="u-custom-font u-font-merriweather u-label u-label-4">7.	Estado de la técnica y grado de novedad  </label>
+              <br><!--[endif]--> Estado de la técnica: resumen de estudios e intentos de solución ensayados previamente, se justifica posibles afectaciones del prototipo innovador en patentes, mercado, o artículos. Se debe establecer el valor agregado del proyecto con respecto a lo existente en la institución o empresa en la que se ejecutará el desarrollo. Tener en cuenta el mejoramiento de productos y servicios o nivelación con respecto a los competidores existentes, no deberá sobrepasar las 1000 palabras.&nbsp;<!--[if !supportFootnotes]-->
+              <br>
+                <input type="text" placeholder="" id="text-83e1" name="txt_7justificacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-6">
+              <label for="text-a5c2" class="u-custom-font u-font-merriweather u-label u-label-5">8.	Marco conceptual </label>
+              <br><!--[endif]--> Desarrollo de las variables o categorías conceptuales a emplear en el proyecto, no deberá sobrepasar las 2000 palabras.&nbsp;<!--[if !supportFootnotes]-->
+              <br>
+                <input type="text" placeholder="" id="text-a5c2" name="txt_8marcoConceptual" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+
+            <div class="u-form-group u-label-top u-form-group-7">
+              <label for="text-2b0d" class="u-custom-font u-font-merriweather u-label u-label-6">9.	Justificación del nivel de TRL actual del desarrollo de la tecnología  </label>
+              <br><!--[endif]--> Se debe argumentar las razones por las cuales el proyecto se ajusta a la tipología de desarrollo, además, se debe especificar el nivel de TRL o maduración: ejemplo, validación pre comercial, estudios de vigilancia tecnológica, etc., no deberá sobrepasar las 1000 palabras.&nbsp;<!--[if !supportFootnotes]-->
+              <br>
+                <input type="text" placeholder="" id="text-2b0d" name="txt_8antecedentes" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-8">
+              <label for="text-c674" class="u-custom-font u-font-merriweather u-label u-label-7">10.	Justificación del carácter inventivo, novedad y utilidad del desarrollo o tecnología </label>
+              <br><!--[endif]--> Exposición en forma organizada y precisa de cómo se desarrollará y alcanzarán los objetivos, describiendo el uso de métodos, procedimientos, técnicas analíticas cualitativas y cuantitativas que se utilizarán. Se recomienda redactar la metodología por objetivo específico y definir para cada uno de ellos, el procedimiento, técnica o herramienta a utilizar, por ejemplo, simulaciones, validaciones, ensayos, entre otros, las variables a analizar cuando aplique y la información o datos que aspira a obtener y los resultados.
+            </p>
+                <input type="text" placeholder="" id="text-c674" name="txt_10novedadProyecto" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-9">
+              <label for="text-3692" class="u-custom-font u-font-merriweather u-label u-label-8">11.	Metodología o diseño metodológico </label>
+              <br><!--[endif]--> Se debe argumentar las razones por las cuales el proyecto se ajusta a la tipología de desarrollo, además, se debe especificar el nivel de TRL o maduración: ejemplo, validación pre comercial, estudios de vigilancia tecnológica, etc., no deberá sobrepasar las 1000 palabras.
+            </p>
+                <input type="text" placeholder="" id="text-3692" name="txt_11metodologia" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-10">
+              <label for="text-6bfb" class="u-custom-font u-font-merriweather u-label u-label-9">12.	Mercado y aplicación </label>
+              <br><!--[endif]-->  Exposición en forma organizada y precisa de cómo se desarrollará y alcanzarán los objetivos, describiendo el uso de métodos, procedimientos, técnicas analíticas cualitativas y cuantitativas que se utilizarán. Se recomienda redactar la metodología por objetivo específico y definir para cada uno de ellos, el procedimiento, técnica o herramienta a utilizar, por ejemplo, simulaciones, validaciones, ensayos, entre otros, las variables a analizar cuando aplique y la información o datos que aspira a obtener y los resultados.
+            </p>
+                <input type="text" placeholder="" id="text-6bfb" name="txt_12mercado" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-10">
+              <label for="text-6bfb" class="u-custom-font u-font-merriweather u-label u-label-9">	Productos Esperados </label>
+              <br><!--[endif]-->  Se debe definir los productos medibles y cuantificables que se alcanzarán con el desarrollo del proyecto. Es necesario fijar como mínimo un resultado por cada objetivo específico e indicar las características de nuevo conocimiento generado, medios de verificación y los indicadores. Estos resultados deberán alcanzarse en su totalidad en el marco del desarrollo del proyecto y deberán ser coherentes con la metodología y evidenciar el cumplimiento de los objetivos del proyecto.
+            </p>
+                <input type="text" placeholder="" id="text-6bfb" name="txt_12mercado" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-10">
+              <label for="text-6bfb" class="u-custom-font u-font-merriweather u-label u-label-9">	Tipología </label>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form">
+
+          <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-1">13.&nbsp;<!--[endif]-->Impacto esperado del proyecto<a href="#_ftn1" name="_ftnref1" title="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"><!--[endif]-->
+
+              </a>
+
+              <br>
+                  (Se deben relacionar los efectos a mediano y largo plazo esperados con el desarrollo del proyecto como resultado del conocimiento adquirido y generado en la investigación. Su formulación se realiza a manera de indicadores.)
+
+            </p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-text u-text-2"><b>Indicadores de impacto</b>
+            </p>
+
+            <div class="u-form-group u-form-partition-factor-2 u-form-group-4">
+              <label for="text-9b7b" class="u-custom-font u-font-merriweather u-label">Académico </label>
+              <br><!--[endif]-->  Este impacto se refiere específicamente al “impacto” de las publicaciones científicas. En este modelo el “impacto académico”, se asocia con los indicadores lo reportado por bases de datos dedicadas a la medición de estos temas, de este modo, existe el indicador proporcionado por “Thomson SCienTIfic Journal” (denominado “Impact Factor - JIF”) y el indicador proporcionado por “SCImago Journal Rank” el (denominado SJR indicator) calculado por Scopus. A nivel nacional, aunque con características distintas, se encuentra la clasificación de revistas especializadas realizada por Publindex (Minciencias, 2021).
+            </p>
+                <input type="text" placeholder="Indicador (es)" id="text-9b7b" name="txt_campoAcademico_Indicador" class="u-input u-input-rectangle u-radius-9">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-group-5">
+              <label for="text-6820" class="u-custom-font u-font-merriweather u-label">Desarrollo Tecnológico e Innovación </label>
+              <br><!--[endif]-->  Este impacto se refiere a las transferencias que derivan en la cesión de derechos de explotación, los contratos o productos derivados de patentes, las iniciativas empresariales, creación de Spin-off; en paso de métodos, técnicas y dispositivos (Minciencias, 2021).
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+                <input type="text" placeholder="Indicador (es)" id="text-6820" name="txt_desarrolloTecnologico_Indicador" class="u-input u-input-rectangle u-radius-9">
+            </div>
+
+            <div class="u-form-group u-form-partition-factor-2 u-form-group-6">
+              <label for="text-89e0" class="u-custom-font u-font-merriweather u-label">Social </label>
+              <br><!--[endif]-->  Este impacto se refiere a la formulación de políticas públicas, normas sociales, normas técnicas (Minciencias, 2021).
+            </p>
+                <br>
+                <input type="text" placeholder="Indicador (es)" id="text-89e0" name="txt_social_Indicador" class="u-input u-input-rectangle u-radius-9">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-group-7">
+              <label for="text-ed1b" class="u-custom-font u-font-merriweather u-label">Educativo </label>
+              <br><!--[endif]-->  Este impacto se refiere a la formación de recursos humanos de alta calidad para la investigación, el desarrollo tecnológico o la innovación (Minciencias, 2021).
+            </p>
+                <input type="text" placeholder="Indicador (es)" id="text-ed1b" name="txt_educativo_Indicador" class="u-input u-input-rectangle u-radius-9">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-group-8">
+              <label for="text-adaf" class="u-custom-font u-font-merriweather u-label">Simbólico </label>
+              <br><!--[endif]-->Este impacto se refiere a la “legitimidad”, “credibilidad” y “notoriedad” de los investigadores según la convocatoria (Minciencias, 2021).
+            </p>
+                <input type="text" placeholder="Indicador (es)" id="text-adaf" name="txt_simbolico_Indicador " class="u-input u-input-rectangle u-radius-9">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-group-9">
+              <label for="text-cc04" class="u-custom-font u-font-merriweather u-label">Económicos </label>
+              <br><!--[endif]-->Este impacto se refiere a la capacidad para gestionar recursos para el grupo (a través de la gestión de proyectos) (Minciencias, 2021).
+            </p>
+                <input type="text" placeholder="Indicador (es)" id="text-cc04" name="txt_economicos_Indicador" class="u-input u-input-rectangle u-radius-9">
+            </div>
+
+
+      </div>
+
+          <br>
+          <br>
+
+
+
+
+
+
+
+            <br>
+
+
+            <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-2"> 14. Licencias ambientales, consulta previa y contrato de acceso a recursos genéticos y/o productivos derivados o permisos <br>
+
+
+
+
+          <div class="u-form-group u-label-top u-form-group-10">
+              <!--[endif]-->  Se debe especificar si el proyecto requiere o no de algún permiso, de acuerdo al alcance y componente metodológico de su propuesta y a la legislación y normativa vigente en cuanto a: 1) Licencias ambientales, 2) Contrato de acceso a recursos genéticos y/o productos derivados con fines comerciales, industriales o de prospección biológica, 3) Recolección de especímenes de especies silvestres de la diversidad biológica con fines de investigación científica no comercial, 4) Recolección de especímenes de especies silvestres de la diversidad biológica con fines de elaboración de estudios ambientales, 5) Colecciones biológicas, 6) Manipulación y movilización de los recursos biológicos en el territorio nacional, de la misma forma que la introducción de especies exóticas, 7) Consentimiento informado 8) Consulta previa con las “Comunidades Indígenas y Afrodescendientes” y 9) Proyectos que involucren .
+            </p>
+                <input type="text" placeholder="" id="text-6bfb" name="txt_14componente_etico" class="u-input u-input-rectangle u-radius-10">
+          </div>
+
+
+
+          <div class="u-form-group u-label-top u-form-group-10">
+              <label for="text-6bfb" class="u-custom-font u-font-merriweather u-label u-label-9">16. Identificación de riesgos posibles y tratamiento </label>
+
+                <input type="text" placeholder="" id="text-6bfb" name="txt_15identidad" class="u-input u-input-rectangle u-radius-10">
+          </div>
+
+
+
+
+            <div class="u-form-group u-label-top u-form-group-17">
+              <label for="text-d7ac" class="u-custom-font u-font-merriweather u-label u-label-12">17.Alineación con políticas nacionales, regionales y locales.</label>
+              <input type="text" placeholder="" id="text-d7ac" name="txt_17alineacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+            <div class="u-form-group u-label-top u-form-group-18">
+              <label for="text-7462" class="u-custom-font u-font-merriweather u-label u-label-13">18. Presupuesto </label>
+              <br><!--[endif]-->  Debe presentarse discriminado teniendo en cuenta las actividades relacionadas con el cumplimiento de los objetivos, resultados, productos y cronograma propuestos. De igual manera, todos los proyectos deben contar con una contrapartida externa ya sea en especie o efectivo no inferior al 30% del presupuesto total del proyecto de investigación..
+            </p>
+                <input type="text" placeholder="" id="text-7462" name="text_presupuesto" class="u-input u-input-rectangle u-radius-10">
+            </div>
+
+
+          <p class="u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-4">19. Cronograma<a href="#_ftn1" name="_ftnref1" title="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"><!--[if !supportFootnotes]--><b></b><!--[endif]-->
+              </a>
+                <br><!--[endif]-->  Distribución de actividades a lo largo del tiempo de ejecución del proyecto. Asociar a cada actividad el o los objetivos (enumerados) relacionados con estos.
+
+              <br>
+            </p>
+            <p class="u-align-center u-custom-font u-font-merriweather u-form-group u-form-text u-label-top u-text u-text-5">Ob​jetivos </p>
+
+
+
+
+
+
+          <div class="u-form-group u-label-top">
+              <label  class="u-custom-font u-font-merriweather u-label u-label-14">Objetivo Especifico 1</label>
+              </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top">
+              <label for="text-974d" class="u-custom-font u-font-merriweather u-label u-label-15">Actividad 1</label>
+              <input type="text" placeholder="" id="text-974d" name="txt_actividad1_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top">
+              <label for="text-bbf7" class="u-custom-font u-font-merriweather u-label u-label-16">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-bbf7" name="txt_producto1_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top">
+              <label for="text-a0dd" class="u-custom-font u-font-merriweather u-label u-label-17">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-a0dd" name="txt_mes1_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top">
+              <label for="text-b59e" class="u-custom-font u-font-merriweather u-label u-label-18">Actividad 2</label>
+              <input type="text" placeholder="" id="text-b59e" name="txt_actividad2_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-26">
+              <label for="text-2586" class="u-custom-font u-font-merriweather u-label u-label-19">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-2586" name="txt_producto2_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-27">
+              <label for="text-59c7" class="u-custom-font u-font-merriweather u-label u-label-20">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-59c7" name="txt_mes2_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top">
+              <label for="text-596a" class="u-custom-font u-font-merriweather u-label u-label-21">Actividad 3</label>
+              <input type="text" placeholder="" id="text-596a" name="txt_actividad3_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-29">
+              <label for="text-feb6" class="u-custom-font u-font-merriweather u-label u-label-22">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-feb6" name="txt_producto3_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-30">
+              <label for="text-b195" class="u-custom-font u-font-merriweather u-label u-label-23">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-b195" name="txt_mes3_Objetivo1" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <br>
+            <br>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-label-top u-line u-line-horizontal u-line-3"></div>
+            <br>
+
+
+        <div class="u-form-group u-label-top u-form-group-32">
+              <label  class="u-custom-font u-font-merriweather u-label u-label-24">Objetivo Especifico 2</label>
+              </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-33">
+              <label for="text-2913" class="u-custom-font u-font-merriweather u-label u-label-25">Actividad 1</label>
+              <input type="text" placeholder="" id="text-2913" name="txt_actividad1_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-34">
+              <label for="text-c7ca" class="u-custom-font u-font-merriweather u-label u-label-26">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-c7ca" name="txt_producto1_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-35">
+              <label for="text-3259" class="u-custom-font u-font-merriweather u-label u-label-27">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-3259" name="txt_mes1_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-36">
+              <label for="text-5437" class="u-custom-font u-font-merriweather u-label u-label-28">Actividad 2</label>
+              <input type="text" placeholder="" id="text-5437" name="txt_actividad2_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-37">
+              <label for="text-0626" class="u-custom-font u-font-merriweather u-label u-label-29">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-0626" name="txt_producto2_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-38">
+              <label for="text-310f" class="u-custom-font u-font-merriweather u-label u-label-30">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-310f" name="txt_mes2_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-39">
+              <label for="text-5ff9" class="u-custom-font u-font-merriweather u-label u-label-31">Actividad 3</label>
+              <input type="text" placeholder="" id="text-5ff9" name="txt_actividad3_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-40">
+              <label for="text-4a74" class="u-custom-font u-font-merriweather u-label u-label-32">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-4a74" name="txt_producto3_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-41">
+              <label for="text-8444" class="u-custom-font u-font-merriweather u-label u-label-33">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-8444" name="txt_mes3_Objetivo2" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <br>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-label-top u-line u-line-horizontal u-line-4"></div>
+            <br>
+          <div class="u-form-group u-label-top u-form-group-43">
+              <label for="text-c696" class="u-custom-font u-font-merriweather u-label u-label-34">Entrega del informe de avance</label>
+              <input type="text" placeholder="" id="text-c696" name="txt_entregainformeavance" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <br>
+            <br>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-label-top u-line u-line-horizontal u-line-5"></div>
+            <br>
+            <div class="u-form-group u-label-top u-form-group-45">
+              <label  class="u-custom-font u-font-merriweather u-label u-label-35">Objetivo Especifico 3</label>
+              </div>
+
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-46">
+              <label for="text-c8d6" class="u-custom-font u-font-merriweather u-label u-label-36">Actividad 1</label>
+              <input type="text" placeholder="" id="text-c8d6" name="txt_actividad1_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-47">
+              <label for="text-a4a5" class="u-custom-font u-font-merriweather u-label u-label-37">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-a4a5" name="txt_producto1_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-48">
+              <label for="text-54f7" class="u-custom-font u-font-merriweather u-label u-label-38">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-54f7" name="txt_mes1_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-49">
+              <label for="text-ba7d" class="u-custom-font u-font-merriweather u-label u-label-39">Actividad 2</label>
+              <input type="text" placeholder="" id="text-ba7d" name="txt_actividad2_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-50">
+              <label for="text-8050" class="u-custom-font u-font-merriweather u-label u-label-40">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-8050" name="txt_producto2_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-51">
+              <label for="text-e488" class="u-custom-font u-font-merriweather u-label u-label-41">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-e488" name="txt_mes2_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-52">
+              <label for="text-a059" class="u-custom-font u-font-merriweather u-label u-label-42">Actividad 3</label>
+              <input type="text" placeholder="" id="text-a059" name="txt_actividad3_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-53">
+              <label for="text-2e15" class="u-custom-font u-font-merriweather u-label u-label-43">Productos o evidencias</label>
+              <input type="text" placeholder="" id="text-2e15" name="txt_producto3_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-54">
+              <label for="text-8f82" class="u-custom-font u-font-merriweather u-label u-label-44">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-8f82" name="txt_mes3_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-55">
+              <label for="text-29e7" class="u-custom-font u-font-merriweather u-label u-label-45">Actividad 4</label>
+              <input type="text" placeholder="" id="text-29e7" name="txt_actividad4_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-56">
+              <label for="text-d105" class="u-custom-font u-font-merriweather u-label u-label-46">Producto o evidencias</label>
+              <input type="text" placeholder="" id="text-d105" name="txt_producto4_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-57">
+              <label for="text-c3fb" class="u-custom-font u-font-merriweather u-label u-label-47">Mes</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-c3fb" name="txt_mes4_Objetivo3" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-58">
+              <label for="text-67eb" class="u-custom-font u-font-merriweather u-label u-label-48">Productos y actividades asociados a la estrategia de divulgación y de comunicación de resultados</label>
+              <input type="text" placeholder="" id="text-67eb" name="txt_productos_Estrategiadivulgacion" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-label-top u-line u-line-horizontal u-line-6"></div>
+            <div class="u-form-group u-label-top u-form-group-60">
+              <label for="text-2796" class="u-custom-font u-font-merriweather u-label u-label-49">Entrega del informe final</label>
+              <input type="text" placeholder="Nombre del mes/es" id="text-2796" name="txt_entregainformafinal" class="u-input u-input-rectangle u-radius-10">
+            </div>
+            <div class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-label-top u-line u-line-horizontal u-line-6"></div>
+            <div class="u-form-group u-label-top u-form-group-60">
+              <label for="text-2796" class="u-custom-font u-font-merriweather u-label u-label-49">Referecias</label>
+              <textarea type="text" rows="5" cols="50" placeholder="links" id="texto_largo" name="txt_referecias" class="u-input u-input-rectangle u-radius-10"></textarea>
+            </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="u-align-center u-form-group u-form-submit u-label-top">
+              <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-merriweather u-radius-9 u-btn-2">Guardar</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+
+   </form>
+
+
+
+
+    
+
+    
+
+
+
+</body></html>

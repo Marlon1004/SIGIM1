@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lora';
+    background: url("../img/fondoLogin.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px 50px;
+    background-size: 100% 100%;
+  }
+  
+  .img2 {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .cat{
+    height: 22%;
+    width: 135%;
+  }
+
+  #contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 70%;
+    height: 10%;
+}
+
+#central {
+    max-width: 30%;
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#login {
+    width: 145%;
+    padding: 8% 10%;
+    background-color: #f2f4f3;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+
+    border-radius:20px;
+  box-shadow: 4px 4px 4px #373c3c;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 110%;
+    height: 100%;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius:10px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#0f3b5e;
+    width: 50%;
+    height: 4%;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #fff;
+    
+    margin-top: 10px;
+    margin-left: 25%;
+    border-radius:10px;
+}
+
+#login button:hover {
+    background-color: #E4E4E4;
+    color:#0f3b5e;
+}
+
+.imgfooter2{
+    width: 30px;
+    margin-right: 1px;
+  }
+
+  
