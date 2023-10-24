@@ -31,7 +31,7 @@ SECRET_KEY = '8t%dgnw)-5qp#$y**gd(z+v($xnoj66+!1yqj+g(d(cwvw$3t4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1', 'marlonquenoran.pythonanywhere.com']
 
 
 # Application definition
@@ -106,12 +106,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
-STATIC_TMP = os.path.join(BASE_DIR, 'static')
-
-os.makedirs(STATIC_TMP, exist_ok=True)
-os.makedirs(STATIC_ROOT, exist_ok=True)
+STATIC_ROOT = os.path.join(DATA_DIR, 'static/')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
@@ -163,7 +158,6 @@ MIDDLEWARE = [
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.language.LanguageCookieMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware' #nueva
-    'whitenoise.middleware.WhiteNoiseMiddleware' #nueva
 ]
 
 INSTALLED_APPS = [
@@ -351,6 +345,3 @@ AUTHENTICATION_BACKENDS = [
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '/'
-
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
